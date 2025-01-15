@@ -39,8 +39,16 @@ body {
 
 .mascot {
 	position: absolute;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 420px;
 	z-index: 0;
+	width: 100%;
+}
+
+.mascot img {
+	max-width: 330px;
+	justify-content: center;
 }
 
 .signature-stroke {
