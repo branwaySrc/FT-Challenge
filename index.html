@@ -5,8 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>FT Wallet-Login</title>
 		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./style.css" />
 
 		<!--Google Fonts-->
@@ -21,7 +20,7 @@
 	<body>
 		<div class="bg-wrapper bg-image">
 			<figure class="mascot">
-				<img src="./img/burger-character.png" alt="main-mascot" />
+				<img src="./img/burger-character.png" alt="main-mascot" width="300" />
 			</figure>
 			<div class="content-wrapper signature-stroke">
 				<!--lang-->
@@ -83,6 +82,7 @@
 		warningEmailText.style.display = "none";
 		warningPwText.style.display = "none";
 
+		// 이메일 입력 필드 진입&벗어날 때 경고 메시지 숨기기
 		emailInput.addEventListener("input", function () {
 			const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 			if (!emailPattern.test(emailInput.value)) {
@@ -93,10 +93,10 @@
 		});
 
 		emailInput.addEventListener("blur", function () {
-			// 이메일 입력 필드를 벗어날 때 경고 메시지 숨기기
 			warningEmailText.style.display = "none";
 		});
 
+		// 비번 입력 필드 진입&벗어날 때 경고 메시지 숨기기
 		pwInput.addEventListener("input", function () {
 			const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 			if (!emailPattern.test(emailInput.value)) {
@@ -107,7 +107,6 @@
 		});
 
 		pwInput.addEventListener("blur", function () {
-			// 이메일 입력 필드를 벗어날 때 경고 메시지 숨기기
 			warningPwText.style.display = "none";
 		});
 	</script>
