@@ -227,3 +227,16 @@ body {
 .bread-container .bread-box > .processed {
 	background-color: #e32929;
 }
+
+.proceed-btn-container {
+	margin-top: 10px;
+}
+
+.previous-link-container {
+	margin-top: 10px;
+}
+
+.previous-link-container > a {
+	color: #333;
+	font-weight: bold;
+}

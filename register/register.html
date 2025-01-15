@@ -77,13 +77,14 @@
 						<div>
 							<h2 class="signature-font signature-title">Verification Code</h2>
 							<div class="verification-box">
-								<input id="" class="signature-input" type="text" placeholder="Code" required />
-								<button class="action-btn signature-stroke">Check</button>
+								<input class="signature-input" type="text" placeholder="Code" required />
+								<button id="verifyBtn" class="action-btn signature-stroke">Check</button>
 							</div>
+							<p id="invalidWarning" class="warning-text">Invalid code</p>
 						</div>
 					</div>
 					<div class="terms-container">
-						<button>
+						<button id="activeBtn">
 							<img src="../img/icons/check.png" width="12" />
 						</button>
 						<p class="text-md">
@@ -93,7 +94,7 @@
 						</p>
 					</div>
 					<div class="proceed-btn-container">
-						<button class="action-btn signature-stroke">Next</button>
+						<button id="goToPassword" class="action-btn signature-stroke">Next</button>
 					</div>
 					<div class="previous-link-container">
 						<a href="./referral.html"> Go back to previous </a>
@@ -125,26 +126,60 @@
 		<script>
 			// 이메일 입력 필드 진입&벗어날 때 경고 메시지 숨기기입니다.
 			const emailInput = document.getElementById("emailInput");
-			const warningEmailText = document.getElementById("emailInputWarning");
+			const warningEmailMessage = document.getElementById("emailInputWarning");
 			const sendVerificationCode = document.getElementById("sendingVerificationCode");
 
-			warningEmailText.style.display = "none";
+			warningEmailMessage.style.display = "none";
 			sendVerificationCode.style.display = "none";
 
 			emailInput.addEventListener("input", function () {
 				const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-				if (!emailPattern.test(emailInput.value)) {
-					warningEmailText.style.display = "block";
+				if (!emailPattern.test(emailInput.value) || emailInput.value === "") {
+					warningEmailMessage.style.display = "block";
 					sendVerificationCode.style.display = "none";
 				} else {
-					warningEmailText.style.display = "none";
+					warningEmailMessage.style.display = "none";
 					sendVerificationCode.style.display = "block";
 				}
 			});
 
-			emailInput.addEventListener("blur", function () {
-				warningEmailText.style.display = "none";
+			// 이메일 인증 코드 불일치에 나타나는 메시지입니다. invalidWarning
+			const verifyBtn = document.getElementById("verifyBtn");
+			const invalidWarningMessage = document.getElementById("invalidWarning");
+			invalidWarningMessage.style.display = "none";
+
+			let verifyFails = true;
+
+			verifyBtn.addEventListener("click", function () {
+				if (verifyFails) {
+					invalidWarningMessage.style.display = "none";
+				} else {
+					invalidWarningMessage.style.display = "block";
+				}
+				verifyFails = !verifyFails;
 			});
+
+			// 개인정보수집 버튼
+			const termAcceptBtn = document.getElementById("activeBtn");
+			let inactiveColor = true;
+
+			termAcceptBtn.addEventListener("click", function () {
+				if (inactiveColor) {
+					termAcceptBtn.style.backgroundColor = "#E32929";
+					termAcceptBtn.style.color = "#fff";
+				} else {
+					termAcceptBtn.style.backgroundColor = "#333";
+					termAcceptBtn.style.color = "#fff";
+				}
+				inactiveColor = !inactiveColor;
+			});
+
+			//다음으로 이동하기
+			const goToPasswordBtn = document.getElementById("goToPassword");
+			goToPasswordBtn.addEventListener("click", function () {
+				window.location.href = "./password.html";
+			});
+
 			// 오버레이 버튼 상호작용입니다.
 			document.getElementById("sendVerificationBtn").addEventListener("click", function () {
 				document.getElementById("codeSentOverlay").style.display = "flex";

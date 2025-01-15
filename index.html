@@ -74,16 +74,16 @@
 						<figure class="melting-cheese-btn">
 							<img draggable="false" src="./img/cheese-melting2.jpg" />
 						</figure>
-						<button id="openOverlayBtn" class="signature-stroke action-btn">Login</button>
+						<button id="loginBtn" class="signature-stroke action-btn">Login</button>
 					</div>
 					<div class="create-acc">
-						<a class="action-link" href="./register/register.html">New to FT? Open an account</a>
+						<a class="action-link" href="./register/referral.html">New to FT? Open an account</a>
 					</div>
 				</section>
 			</div>
 
-			<!--overlay-->
-			<div id="overlay" class="overlay-wrapper">
+			<!--Overlay-->
+			<div id="loginOverlay" class="overlay-wrapper">
 				<div class="overlay-container signature-stroke">
 					<div class="content-box">
 						<img src="./img/icons/message-x.png" width="40" />
@@ -95,11 +95,11 @@
 					<aside class="content-box">
 						<div>
 							<p>
-								The referral code you entered<br />
+								The login or password you entered<br />
 								is incorrect or not exist
 							</p>
 						</div>
-						<button id="closeOverlayBtn" class="action-btn signature-stroke">Got it</button>
+						<button id="closeLoginOverlayBtn" class="action-btn signature-stroke">Got it</button>
 					</aside>
 				</div>
 			</div>
@@ -114,16 +114,13 @@
 		warningEmailText.style.display = "none";
 
 		emailInput.addEventListener("input", function () {
-			const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-			if (!emailPattern.test(emailInput.value)) {
+			const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,16}$/;
+
+			if (!emailPattern.test(emailInput.value) || emailInput.value === "") {
 				warningEmailText.style.display = "block";
 			} else {
 				warningEmailText.style.display = "none";
 			}
-		});
-
-		emailInput.addEventListener("blur", function () {
-			warningEmailText.style.display = "none";
 		});
 
 		// 비밀번호 입력 필드 진입&벗어날 때 경고 메시지 숨기기입니다.
@@ -132,25 +129,22 @@
 		warningPwText.style.display = "none";
 
 		pwInput.addEventListener("input", function () {
-			const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-			if (!emailPattern.test(emailInput.value)) {
+			const pwPattern = /^[a-zA-Z0-9]{8,16}$/;
+
+			if (!pwPattern.test(pwInput.value) || pwPattern.value === "") {
 				warningPwText.style.display = "block";
 			} else {
 				warningPwText.style.display = "none";
 			}
 		});
 
-		pwInput.addEventListener("blur", function () {
-			warningPwText.style.display = "none";
-		});
-
 		// 오버레이 버튼 상호작용입니다.
-		document.getElementById("openOverlayBtn").addEventListener("click", function () {
-			document.getElementById("overlay").style.display = "flex";
+		document.getElementById("loginBtn").addEventListener("click", function () {
+			document.getElementById("loginOverlay").style.display = "flex";
 		});
 
-		document.getElementById("closeOverlayBtn").addEventListener("click", function () {
-			document.getElementById("overlay").style.display = "none";
+		document.getElementById("closeLoginOverlayBtn").addEventListener("click", function () {
+			document.getElementById("loginOverlay").style.display = "none";
 		});
 	</script>
 </html>
