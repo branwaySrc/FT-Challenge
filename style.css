@@ -87,9 +87,9 @@ body {
 
 .content-wrapper {
 	display: block;
-	width: 100%;
-	padding: 16px 34px 40px 34px;
-	max-width: 340px;
+	width: 95%;
+	padding: 16px 24px 40px 24px;
+	max-width: 380px;
 	min-width: 300px;
 	background-color: #fff;
 	background-color: #ffb834;
