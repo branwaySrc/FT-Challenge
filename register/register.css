@@ -1,0 +1,98 @@
+.register-content-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+	padding: 16px 24px 40px 24px;
+	max-width: 380px;
+	min-width: 300px;
+	z-index: 99;
+	position: relative;
+	overflow: hidden;
+}
+
+.header-content-container .header-content > p {
+	margin-top: 14px;
+}
+
+.register-content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.register-content-container .email-box h2,
+.verification-container h2 {
+	margin-bottom: 10px;
+}
+
+.register-content-container .email-box aside > button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.verification-container {
+	margin-top: 14px;
+}
+
+.verification-container .verification-box {
+	display: flex;
+	gap: 4px;
+}
+
+.verification-container .verification-box button {
+	height: 100%;
+	width: 50%;
+	padding: 14px;
+}
+
+.terms-container {
+	display: flex;
+	gap: 14px;
+	margin-top: 10px;
+	align-items: center;
+}
+
+.terms-container > button {
+	border-radius: 99px;
+	overflow: hidden;
+	background-color: #333;
+	border: none;
+	width: 25px;
+	height: 25px;
+}
+
+.terms-container > button > img {
+	margin-top: 2px;
+}
+
+.terms-container > p {
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.terms-container > p > a {
+	color: #333;
+}
+
+.proceed-btn-container {
+	margin-top: 10px;
+}
+
+.previous-link-container {
+	margin-top: 10px;
+}
+
+.previous-link-container > a {
+	color: #333;
+	font-weight: bold;
+}

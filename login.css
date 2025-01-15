@@ -34,7 +34,7 @@
 	width: 50px;
 }
 
-.content-wrapper {
+.login-content-wrapper {
 	display: block;
 	width: 95%;
 	padding: 16px 24px 40px 24px;
@@ -53,6 +53,11 @@
 
 .login-container .email-box,
 .login-container .password-box {
+	margin-bottom: 8px;
+}
+
+.login-container .email-box > div > h2,
+.login-container .password-box > div > h2 {
 	margin-bottom: 8px;
 }
 
