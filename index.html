@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>FT Wallet-Login</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./style.css" />
+
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="bg-wrapper bg-image">
+			<figure class="mascot">
+				<img src="./img/burger-character.png" alt="main-mascot" />
+			</figure>
+			<div class="content-wrapper signature-stroke">
+				<!--lang-->
+				<section class="lang-container">
+					<ul class="lang-action">
+						<li>
+							<img src="./img/lang/us.png" alt="english" title="english" width="18" height="18" />
+						</li>
+						<li class="signature-font">
+							<p>English</p>
+						</li>
+						<li>
+							<img src="./img/icons/chevron-down.png" alt="english" title="english" width="24" height="24" />
+						</li>
+					</ul>
+				</section>
+
+				<!--login-->
+				<section class="login-container">
+					<div class="email-box">
+						<div>
+							<h2 class="title signature-font">Account (E-mail)</h2>
+							<input class="signature-stroke" type="email" placeholder="Email" required />
+						</div>
+						<article class="warning-text">
+							<p>Please enter a valid email address!</p>
+						</article>
+					</div>
+					<div class="password-box">
+						<div>
+							<h2 class="title signature-font">Password</h2>
+							<input class="signature-stroke" type="password" placeholder="Password" required />
+						</div>
+						<article class="warning-text">
+							<p>Password must contain 8~16 letters</p>
+						</article>
+					</div>
+				</section>
+
+				<!--actions-->
+				<section class="action-container">
+					<div class="find-pw">
+						<a href="#">Forgot your password?</a>
+					</div>
+					<button class="signature-stroke">Login</button>
+					<div class="create-acc">
+						<a href="#">New to FT? Open an account</a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
