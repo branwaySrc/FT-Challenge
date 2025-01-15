@@ -33,3 +33,12 @@ pwInput.addEventListener("input", function () {
 pwInput.addEventListener("blur", function () {
 	warningPwText.style.display = "none";
 });
+
+// 오버레이 버튼 상호작용입니다.
+document.getElementById("openOverlayBtn").addEventListener("click", function () {
+	document.getElementById("overlay").style.display = "flex";
+});
+
+document.getElementById("closeOverlayBtn").addEventListener("click", function () {
+	document.getElementById("overlay").style.display = "none";
+});
