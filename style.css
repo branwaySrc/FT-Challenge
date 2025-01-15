@@ -9,9 +9,10 @@ body {
 	font-family: Arial, sans-serif;
 	letter-spacing: -0.2px;
 	word-spacing: -0.3px;
-	height: 100vh;
+	height: 100dvh;
 	font-family: inter, sans-serif;
 	position: relative;
+	background-color: #f2d450;
 }
 
 .bg-wrapper {
@@ -47,7 +48,7 @@ body {
 }
 
 .mascot img {
-	max-width: 330px;
+	max-width: 300px;
 	justify-content: center;
 }
 
