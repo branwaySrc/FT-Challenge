@@ -1,0 +1,94 @@
+.overview-container {
+	margin-top: 20px;
+}
+
+.overview-container .overview-header {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.overview-container .overview-header .phrase {
+	color: #989898;
+}
+
+.overview-content-container {
+	margin-top: 20px;
+	border-radius: 25px;
+	padding: 16px;
+}
+
+.overview-content-container .current-value {
+	background-color: #333333;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 14px;
+	border: 2px solid #ffffff20;
+	gap: 4px;
+	position: relative;
+}
+
+.overview-content-container .current-value > span {
+	color: #989898;
+}
+.overview-content-container .current-value > legend {
+	color: #fff;
+}
+.overview-content-container .current-value > button {
+	all: unset;
+	cursor: pointer;
+	padding: 4px;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.overview-content-container .address-value-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 14px;
+}
+
+.overview-content-container .address-value-box > .address-value {
+	display: flex;
+	margin-top: 10px;
+	gap: 14px;
+	font-weight: bold;
+}
+
+.overview-content-container .address-value-box > .address-value > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.overview-content-container .address-value-box > .address-value > div > span {
+	margin-top: 4px;
+}
+
+.overview-content-container .address-value-box .address-value .wallet-address {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 180px;
+}
+
+.overview-content-container .address-value-box > .address-value-copy {
+	background-color: #333333;
+	margin-top: 12px;
+	border-radius: 8px;
+}
+
+.overview-content-container .address-value-box > .address-value-copy button {
+	all: unset;
+	cursor: pointer;
+	padding: 6px 8px;
+}
+
+.asset-container .asset-header {
+	margin: 40px 0px 20px 0px;
+}
+
+

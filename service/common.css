@@ -1,0 +1,59 @@
+.screen-wrapper {
+	display: flex;
+	justify-content: center;
+	height: max-content;
+	min-height: 100vh;
+}
+
+.screen-content-sheet {
+	background-color: #f9f9f9;
+	width: 100%;
+	max-width: 520px;
+	min-width: 360px;
+	height: 100%;
+	min-height: 100dvh;
+}
+
+.content-padding {
+	padding: 0px 16px;
+}
+
+.nav-container {
+	background-color: #fff;
+	border-bottom: 1px solid #33333320;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	max-width: 520px;
+	min-width: 360px;
+}
+
+.nav-height {
+	height: 15dvh;
+	min-height: 60px;
+	max-height: 80px;
+}
+
+.nav-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.nav-inner button,
+.nav-inner legend {
+	padding: 26px;
+	all: unset;
+	cursor: pointer;
+}
+
+.nav-inner button > img {
+	padding: 12px;
+}
+
+.lined-border-box {
+	background-color: #fba541;
+	border: 2px solid #00000020;
+}
