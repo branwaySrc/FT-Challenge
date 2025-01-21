@@ -186,3 +186,9 @@
 .footer-container > section > div > span {
 	line-height: 1.5;
 }
+
+.footer-img > figure {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
