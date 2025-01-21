@@ -19,7 +19,7 @@
 				<nav class="nav-container nav-height padding-vertical">
 					<section class="nav-inner">
 						<div>
-							<button class="menu-btn">
+							<button id="menuAction" class="menu-btn">
 								<img draggable="false" src="../../../img/icons/menu.svg" />
 							</button>
 						</div>
@@ -27,12 +27,31 @@
 							<img draggable="false" src="../../../img/logo.png" width="70" />
 						</legend>
 						<div>
-							<button class="alert-btn">
+							<button id="alertAction" class="alert-btn">
 								<img draggable="false" src="../../../img/icons/bell.svg" />
 							</button>
 						</div>
 					</section>
 				</nav>
+
+				<!--alert list-->
+				<div id="pendingNotificationList" class="alert-list-container bg-white border-vertical">
+					<section class="bg-default">
+						<span class="text-gray-200">Notification</span>
+					</section>
+					<article class="text-gray-200">No pending notification</article>
+					<section class="bg-default">
+						<a href="#">
+							<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
+							<span class="font-bold text-gray-200"> View History </span>
+						</a>
+					</section>
+				</div>
+
+				<!--menu list-->
+				<section id="menuList" class="menu-list-bg">
+					<div class="menu-list-container bg-white"></div>
+				</section>
 
 				<div class="nav-height"></div>
 				<!--Account Overview-->
@@ -74,6 +93,7 @@
 					</div>
 				</section>
 
+				<!--Currency Rate-->
 				<section class="currency-rate-container">
 					<div class="currency-rate-header padding-vertical">
 						<legend class="heading-xl">Currency Rate</legend>
@@ -268,6 +288,8 @@
 						</section>
 					</div>
 				</section>
+
+				<!--Promotions-->
 				<section class="promo-list-container">
 					<div class="promo-header padding-vertical">
 						<legend class="text-xl">Available Promos</legend>
@@ -340,6 +362,36 @@
 					.catch(err => {
 						console.error("복사실패".err);
 					});
+			});
+
+			const alertAction = document.getElementById("alertAction");
+			const pendingNotificationList = document.getElementById("pendingNotificationList");
+			let showNotification = false;
+
+			alertAction.addEventListener("click", function () {
+				if (!showNotification) {
+					pendingNotificationList.style.transform = "translateY(0px)";
+					pendingNotificationList.style.transition = "transform 0.3s ease-in-out";
+					showNotification = true;
+					console.log(window.scrollY);
+				} else {
+					pendingNotificationList.style.transform = "translateY(-200%)";
+					showNotification = false;
+				}
+			});
+
+			const menuAction = document.getElementById("menuAction");
+			const menuList = document.getElementById("menuList");
+			let showMenu = false;
+
+			menuAction.addEventListener("click", function () {
+				if (!showNotification) {
+					menuList.style.display = "flex";
+					showMenu = true;
+				} else {
+					menuList.style.display = "none";
+					showMenu = false;
+				}
 			});
 		</script>
 	</body>

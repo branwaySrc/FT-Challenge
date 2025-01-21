@@ -12,6 +12,7 @@
 	min-width: 360px;
 	height: 100%;
 	min-height: 100dvh;
+	position: relative;
 }
 
 .padding-vertical {
@@ -145,16 +146,14 @@
 	border-bottom: 1px solid #33333320;
 	position: fixed;
 	top: 0;
-	z-index: 99;
+	z-index: 999;
 	width: 100%;
 	max-width: 520px;
 	min-width: 360px;
 }
 
 .nav-height {
-	height: 15dvh;
-	min-height: 60px;
-	max-height: 80px;
+	height: 68px;
 }
 
 .nav-inner {
@@ -173,6 +172,47 @@
 
 .nav-inner button > img {
 	padding: 12px;
+}
+
+.alert-list-container {
+	position: fixed;
+	top: 68px;
+	transform: translateY(-200%);
+	transition: transform 0.3s ease-in-out;
+	height: 380px;
+	z-index: 99;
+	max-width: 520px;
+	min-width: 360px;
+	width: 100%;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.alert-list-container > section {
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.alert-list-container > article {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.alert-list-container > section > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	text-decoration: underline;
 }
 
 .footer-container > section {
