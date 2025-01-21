@@ -1,8 +1,12 @@
-.overview-container, .asset-container, .calculator-container {
+.overview-container,
+.asset-container,
+.currency-rate-container {
 	margin-top: 20px;
 }
 
-.overview-container .overview-header, .asset-container .asset-header,.calculator-container .calculator-header{
+.overview-container .overview-header,
+.asset-container .asset-header,
+.currency-rate-container .currency-rate-header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -81,4 +85,61 @@
 	all: unset;
 	cursor: pointer;
 	padding: 6px 8px;
+}
+
+.currency-rate-container .currency-rate-header {
+	margin-bottom: 15px;
+}
+
+.currency-rate-container .currency-rate-content {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 34px;
+}
+
+.currency-rate-container .currency-rate-content > section {
+	padding: 34px 0px;
+}
+
+.currency-rate-content .currency-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+.currency-rate-content .currency-list > li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.currency-rate-content .currency-list > li > .currency-label {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.currency-list > li > dl {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	text-align: right;
+}
+
+.currency-list > li > div > h2 {
+	margin-bottom: 5px;
+}
+
+.currency-rate-container .link-action {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 10px;
+}
+
+.currency-rate-container .link-action > a {
+	padding: 16px;
+	text-decoration: none;
 }
