@@ -1,15 +1,11 @@
-.overview-container {
+.overview-container, .asset-container, .calculator-container {
 	margin-top: 20px;
 }
 
-.overview-container .overview-header {
+.overview-container .overview-header, .asset-container .asset-header,.calculator-container .calculator-header{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-}
-
-.overview-container .overview-header .phrase {
-	color: #989898;
 }
 
 .overview-content-container {
@@ -86,9 +82,3 @@
 	cursor: pointer;
 	padding: 6px 8px;
 }
-
-.asset-container .asset-header {
-	margin: 40px 0px 20px 0px;
-}
-
-

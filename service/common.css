@@ -5,7 +5,7 @@
 	min-height: 100vh;
 }
 
-.screen-content-sheet {
+.screen-safe-view {
 	background-color: #f9f9f9;
 	width: 100%;
 	max-width: 520px;
@@ -14,9 +14,134 @@
 	min-height: 100dvh;
 }
 
-.content-padding {
+.padding-vertical {
 	padding: 0px 16px;
 }
+
+.margin-vertical {
+	margin : 0px 16px
+}
+
+
+.lined-border-box {
+	background-color: #fba541;
+	border: 2px solid #00000020;
+}
+
+.border-rounded-xs {
+	border-radius: 6px;
+	border : 1px solid #33333320;
+}
+
+.border-rounded-xm {
+	border-radius: 8px;
+	border : 1px solid #33333320;
+}
+
+.border-rounded-md {
+	border-radius: 10px;
+	border : 1px solid #33333320;
+}
+
+.border-rounded-lg {
+	border-radius : 14px;
+	border : 1px solid #33333320;
+}
+
+.border-rounded-xl {
+	border-radius : 16px;
+	border : 1px solid #33333320;
+}
+
+.border-rounded-2xl {
+	border-radius : 20px;
+	border : 1px solid #33333320;
+}
+
+.border-rounded-full {
+	border-radius : 999px;
+	border : 1px solid #33333320;
+}
+
+.border-top {
+	border-top : 1px solid #33333320;
+}
+
+.border-bottom {
+	border-top : 1px solid #33333320;
+}
+
+.border-vertical {
+	border-top : 1px solid #33333320;
+	border-bottom: 1px solid #33333320;
+}
+
+.heading-3xl {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: -1px;
+}
+
+.heading-2xl {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: -1px;
+}
+
+.heading-xl {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: -0.5px;
+}
+
+.text-red {
+	color : #E32929;
+}
+
+.text-gray-200 { 
+	color : #989898;
+}
+
+.text-gray-100 { 
+	color : #AAA;
+}
+
+.text-yellow {
+	color: #F59E17;
+}
+
+.text-white {
+	color : #FFFFFF;
+}
+
+.bg-yellow {
+	background-color : #F59E17;
+}
+
+.bg-red {
+	background-color: #E32929
+}
+
+.bg-gray-900 {
+	background-color: #333333;
+}
+
+.bg-white { 
+	background-color: #FFF;
+}
+
+.bg-default { 
+	background-color: #F9F9F9;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+
 
 .nav-container {
 	background-color: #fff;
@@ -51,9 +176,4 @@
 
 .nav-inner button > img {
 	padding: 12px;
-}
-
-.lined-border-box {
-	background-color: #fba541;
-	border: 2px solid #00000020;
 }

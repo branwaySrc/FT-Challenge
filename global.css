@@ -6,43 +6,55 @@
 
 body {
 	margin: 0 auto;
-	letter-spacing: -0.2px;
-	word-spacing: -0.3px;
+	letter-spacing: -0.3px;
+	word-spacing: -0.2px;
 	height: 100dvh;
 	font-family: inter, sans-serif;
 	position: relative;
 	background-color: #f2d450;
+	color: #333;
+	font-size: 12px;
+	line-height: 1.1;
 }
 
 .text-3xl {
 	font-size: 34px;
-	color: #333;
 	font-weight: bold;
 	line-height: 1.1;
 	letter-spacing: -1px;
 }
-.text-xl {
-	font-size: 22px;
-	color: #333;
+
+.text-2xl {
+	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.1;
-	letter-spacing: -0.5px;
+	letter-spacing: -1px;
 }
+
+.text-xl {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: -0.3px;
+}
+
 .text-lg {
 	font-size: 16px;
-	color: #333;
 	font-weight: bold;
 	line-height: 1.1;
+	letter-spacing: -0.3px;
 }
+
 .text-md {
 	font-size: 13px;
-	color: #333;
 	line-height: 1.1;
+	letter-spacing: -0.2px;
 }
+
 .text-sm {
-	font-size: 11px;
-	color: #333;
+	font-size: 10px;
 	line-height: 1.1;
+	letter-spacing: -0.3px;
 }
 
 @keyframes moveBackground {
@@ -52,4 +64,10 @@ body {
 	100% {
 		background-position: 100% 0;
 	}
+}
+
+
+.h-1 {
+	height: 50px;
+	width: 100px;
 }
