@@ -1,12 +1,14 @@
 .overview-container,
 .asset-container,
-.currency-rate-container {
+.currency-rate-container,
+.promo-list-container {
 	margin-top: 20px;
 }
 
 .overview-container .overview-header,
 .asset-container .asset-header,
-.currency-rate-container .currency-rate-header {
+.currency-rate-container .currency-rate-header,
+.promo-list-container .promo-header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -101,21 +103,38 @@
 	padding: 34px 0px;
 }
 
-.currency-rate-content .currency-list {
+.currency-list {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	gap: 32px;
+	gap: 0px;
 }
 
-.currency-rate-content .currency-list > li {
+.currency-list > li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 50%;
+	width: 100%;
+	padding: 10px;
 }
 
-.currency-rate-content .currency-list > li > .currency-label {
+.currency-list > .currency-fft,
+.currency-list > .currency-usdt {
+	border: 1px solid #33333320;
+}
+
+.currency-list > .currency-usdt {
+	border-left: none;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.currency-list > .currency-fft {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.currency-list > li > .currency-label {
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -143,3 +162,121 @@
 	padding: 16px;
 	text-decoration: none;
 }
+
+.asset-content-container {
+	margin-top: 14px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.asset-content-container > .asset-table {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.asset-table .asset-box {
+	border-bottom: 1px solid #33333320;
+	padding-bottom: 16px;
+}
+
+.asset-table .coin-banking {
+	display: flex;
+	gap: 5px;
+	width: 100%;
+}
+
+.asset-table .coin-banking > button {
+	width: 100%;
+	height: 40px;
+}
+
+.coin-statue {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.coin-statue > dl {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.coin-statue .coin-valid {
+	display: flex;
+	margin-top: 4px;
+}
+
+.coin-statue .coin-valid > dl {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: right;
+}
+
+.coin-statue .coin-valid > dl > dl {
+	display: flex;
+	gap: 3px;
+}
+
+.coin-statue > dl > .coin-price {
+	display: flex;
+	gap: 11px;
+}
+
+.coin-statue .coin-price > .coin-label {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.coin-statue > dl > .coin-locked {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
+
+.promo-list-container > .promo-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 16px;
+	margin-bottom: 36px;
+}
+
+.promo-list-container > .promo-list > .promo-item {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-top: 36px;
+	padding-bottom: 30px;
+}
+
+.promo-item > .promo-item-header {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.promo-item > .promo-item-action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.promo-item > .promo-item-action > p {
+	max-width: 40%;
+}
+
+.promo-item > .promo-item-action > a {
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+

@@ -16,7 +16,7 @@
 		<div class="screen-wrapper">
 			<div class="screen-safe-view">
 				<!--TopNavigation-->
-				<nav class="nav-container nav-height content-padding">
+				<nav class="nav-container nav-height padding-vertical">
 					<section class="nav-inner">
 						<div>
 							<button class="menu-btn">
@@ -83,8 +83,10 @@
 							<ul class="currency-list">
 								<li class="currency-fft">
 									<div class="currency-label">
-										<figure><img src="../../../img/currencies/fft-icon.svg" /></figure>
-										<h2 class="text-xl">FFT</h2>
+										<figure>
+											<img draggable="false" src="../../../img/currencies/fft-icon.svg" />
+										</figure>
+										<h2 class="text-lg">FFT</h2>
 									</div>
 									<dl>
 										<dt class="font-bold text-gray-200">USDT</dt>
@@ -93,8 +95,10 @@
 								</li>
 								<li class="currency-usdt">
 									<div class="currency-label">
-										<figure><img src="../../../img/currencies/usdt-icon.svg" /></figure>
-										<h2 class="text-xl">USDT</h2>
+										<figure>
+											<img draggable="false" src="../../../img/currencies/usdt-icon.svg" />
+										</figure>
+										<h2 class="text-lg">USDT</h2>
 									</div>
 									<dl>
 										<dt class="font-bold text-gray-200">USD</dt>
@@ -105,8 +109,10 @@
 						</section>
 						<div class="link-action">
 							<a href="#" class="bg-yellow border-rounded-lg font-bold text-lg text-white">Go to Swap Page</a>
-							<p class="text-gray-200">
-								The current swap rate may vary due to real-time fluctuations and differences at the exact time of swap confirmation.
+							<p class="text-gray-200 text-md">
+								The current swap rate may vary due<br />
+								to real-time fluctuations and differences at the exact<br />
+								time of swap confirmation.
 							</p>
 						</div>
 					</div>
@@ -164,124 +170,131 @@
 
 				<!--My Asset-->
 				<section class="asset-container">
-					<div class="asset-header content-padding">
+					<div class="asset-header padding-vertical">
 						<legend class="heading-xl">My Asset</legend>
 						<p class="text-gray-200 text-md">
 							Even if the deposit has been made, it may not be reflected due to server request delays or caching. Please make sure to refresh the
 							page.
 						</p>
 					</div>
-					<div class="asset-content-container bg-white border-vertical">
+					<div class="asset-content-container bg-white border-vertical padding-vertical">
 						<section class="asset-table">
-							<div>
-								<div class="coin-statue">
-									<div>
-										<figure>Tether Icon<img /></figure>
-										<div>
-											<h2>USDT</h2>
-											<div>
-												<span>≈ $</span>
-												<span>0.99</span>
-											</div>
-										</div>
-										<div>
-											<h2>Locked</h2>
-											<span>200,000.00</span>
-										</div>
-									</div>
-									<aside>
-										<div>
-											<h2>Available</h2>
-											<span>9,800,000.00</span>
-											<div>
-												<span>≈ $</span>
-												<span>9,800,000.00</span>
-											</div>
-										</div>
-									</aside>
-								</div>
-								<div class="coin-banking">
-									<div>
-										<button class="text-white bg-yellow border-rounded-md">Deposit</button>
-										<button class="text-white bg-gray-900 border-rounded-md">Withdrawal</button>
-										<button class="text-white bg-gray-900 border-rounded-md">Transfer</button>
-									</div>
-								</div>
-							</div>
-							<div>
+							<div class="asset-box">
 								<div class="coin-statue">
 									<dl>
-										<figure>Tether Icon<img /></figure>
-										<div>
-											<dt>USDT</dt>
-											<dl>
-												<dd>≈ $</dd>
-												<dd>0.99</dd>
-											</dl>
+										<div class="coin-price">
+											<figure>
+												<img draggable="false" src="../../../img/currencies/fft-icon.svg" />
+											</figure>
+											<div class="coin-label">
+												<h2 class="text-lg bold">FFT</h2>
+												<div class="text-md text-gray-200">
+													<span>≈ $</span>
+													<span>0.99</span>
+												</div>
+											</div>
 										</div>
-										<div>
-											<h2>Locked</h2>
-											<span>200,000.00</span>
+										<div class="coin-locked">
+											<h2 class="text-md font-bold">Locked</h2>
+											<span class="coin-locked-value text-gray-200 text-md">200,000.00</span>
 										</div>
 									</dl>
-									<aside>
+									<aside class="coin-valid">
 										<dl>
-											<dt>Available</dt>
-											<dd>9,800,000.00</dd>
+											<dt class="font-bold text-md">Available</dt>
+											<dd class="font-bold text-md">9,800,000.00</dd>
 											<dl>
-												<dd>≈ $</dd>
-												<dd>9,800,000.00</dd>
+												<dd class="font-bold text-md text-gray-200">≈ $</dd>
+												<dd class="text-gray-200">9,800,000.00</dd>
 											</dl>
 										</dl>
 									</aside>
 								</div>
 								<div class="coin-banking">
-									<div>
-										<button class="text-white bg-yellow border-rounded-md">Deposit</button>
-										<button class="text-white bg-gray-900 border-rounded-md">Withdrawal</button>
-										<button class="text-white bg-gray-900 border-rounded-md">Transfer</button>
-									</div>
+									<button class="text-white bg-yellow border-rounded-xs">Deposit</button>
+									<button class="text-white bg-gray-900 border-rounded-xs">Withdrawal</button>
+									<button class="text-white bg-gray-900 border-rounded-xs">Transfer</button>
+								</div>
+							</div>
+							<div class="asset-box">
+								<div class="coin-statue">
+									<dl>
+										<div class="coin-price">
+											<figure>
+												<img draggable="false" src="../../../img/currencies/usdt-icon.svg" />
+											</figure>
+											<div class="coin-label">
+												<h2 class="text-lg font-bold">USDT</h2>
+												<div class="text-md text-gray-200">
+													<span>≈ $</span>
+													<span>0.99</span>
+												</div>
+											</div>
+										</div>
+										<div class="coin-locked">
+											<h2 class="text-md font-bold">Locked</h2>
+											<span class="coin-locked-value text-gray-200 text-md">200,000.00</span>
+										</div>
+									</dl>
+									<aside class="coin-valid">
+										<dl>
+											<dt class="font-bold text-md">Available</dt>
+											<dd class="font-bold text-md">9,800,000.00</dd>
+											<dl>
+												<dd class="font-bold text-md text-gray-200">≈ $</dd>
+												<dd class="text-gray-200">9,800,000.00</dd>
+											</dl>
+										</dl>
+									</aside>
+								</div>
+								<div class="coin-banking">
+									<button class="text-white bg-yellow border-rounded-xs">Deposit</button>
+									<button class="text-white bg-gray-900 border-rounded-xs">Withdrawal</button>
+									<button class="text-white bg-gray-900 border-rounded-xs">Transfer</button>
 								</div>
 							</div>
 						</section>
 					</div>
 				</section>
-				<section>
-					<div class="promo-header">
+				<section class="promo-list-container">
+					<div class="promo-header padding-vertical">
 						<legend class="text-xl">Available Promos</legend>
 						<p class="text-md text-gray-200">
 							Unlock Exciting Rewards with our<br />
 							Promotion available now!
 						</p>
 					</div>
-					<div>
-						<article class="border-vertical">
-							<div>
-								<h2>Stacking Event</h2>
-								<p>The FFT staking event is proud to be the best event that offers various rewards based on levels.</p>
+					<div class="promo-list">
+						<article class="promo-item border-vertical padding-vertical bg-white">
+							<div class="promo-item-header">
+								<h2 class="text-lg">Stacking Event</h2>
+								<p class="text-md text-gray-200">The FFT staking event is proud to be the best event that offers various rewards based on levels.</p>
 							</div>
-							<aside>
-								<p class="text-yellow">Receive rewards up to 200% right now!</p>
-								<button class="bg-gray-900 border-rounded-md">Get Started</button>
+							<aside class="promo-item-action">
+								<p class="text-yellow font-bold text-md">Receive rewards up to 200% right now!</p>
+								<a href="#" class="bg-gray-900 border-rounded-md text-white text-md"> <span>Get Started</span></a>
 							</aside>
 						</article>
-						<article class="border-vertical">
-							<div>
-								<h2>Stacking Event</h2>
-								<p>The FFT staking event is proud to be the best event that offers various rewards based on levels.</p>
+						<article class="promo-item border-vertical padding-vertical bg-white">
+							<div class="promo-item-header">
+								<h2 class="text-lg">Refer a Friend</h2>
+								<p class="text-md text-gray-200">
+									Are you a proud member of FT? Why not spread the word about FT? Invite your friends to join with our community earn multiples for
+									each person you refer!
+								</p>
 							</div>
-							<aside>
-								<p class="text-yellow">Receive rewards up to 200% right now!</p>
-								<button class="bg-gray-900 border-rounded-md">Get Started</button>
+							<aside class="promo-item-action">
+								<p class="text-yellow font-bold text-md">Unlimited Reward awaits, Join us now!!</p>
+								<a href="#" class="bg-gray-900 border-rounded-md text-white text-md"> <span>Get Started</span></a>
 							</aside>
 						</article>
 					</div>
 				</section>
-				<footer class="bg-gray-900 padding-vertical">
-					<section>
-						<figure><img /></figure>
+				<footer class="footer-container bg-gray-900 padding-vertical text-sm">
+					<section class="padding-vertical">
+						<figure><img draggable="false" src="../../../img/logo_dark.png" width="50" /></figure>
 						<div>
-							<span class="text-gray-200">
+							<span class="text-gray-100">
 								FTT does not direct its website and services to any individual in any country in which the use of its website and services are
 								prohibited by local laws or regulations. When accessing this website from a country in which its use may or may not be prohibited, it
 								is the user's responsibility to ensure that any use of the website or services adhere to local laws or regulations. FFT does not

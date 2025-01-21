@@ -27,34 +27,34 @@ body {
 .text-2xl {
 	font-size: 24px;
 	font-weight: bold;
-	line-height: 1.1;
-	letter-spacing: -1px;
+	line-height: 1.2;
+	letter-spacing: -0.4px;
 }
 
 .text-xl {
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 1.1;
-	letter-spacing: -0.3px;
+	line-height: 1.2;
+	letter-spacing: -0.1px;
 }
 
 .text-lg {
 	font-size: 16px;
 	font-weight: bold;
-	line-height: 1.1;
-	letter-spacing: -0.3px;
+	line-height: 1.2;
+	letter-spacing: -0.1px;
 }
 
 .text-md {
 	font-size: 13px;
-	line-height: 1.1;
-	letter-spacing: -0.2px;
+	line-height: 1.2;
+	letter-spacing: -0.1px;
 }
 
 .text-sm {
 	font-size: 10px;
 	line-height: 1.1;
-	letter-spacing: -0.3px;
+	letter-spacing: -0.2px;
 }
 
 @keyframes moveBackground {
@@ -65,7 +65,6 @@ body {
 		background-position: 100% 0;
 	}
 }
-
 
 .h-1 {
 	height: 50px;
