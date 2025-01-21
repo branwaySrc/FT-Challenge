@@ -35,11 +35,41 @@
 				</nav>
 
 				<!--alert list-->
-				<div id="pendingNotificationList" class="alert-list-container bg-white border-vertical">
+				<div id="pendingNotificationList" class="push-list-container bg-white border-vertical">
 					<section class="bg-default">
 						<span class="text-gray-200">Notification</span>
 					</section>
-					<article class="text-gray-200">No pending notification</article>
+					<article class="text-gray-200 push-list-box">
+						<!--push notice가 없을 경우 아래 요소 노출-->
+						<!--<span id="emptyList">No pending notification</span>-->
+						<!--push notice가 있는 경우 최대 4개까지-->
+						<ul class="push-list">
+							<li class="push-item">
+								<div class="push-info">
+									<h2 class="text-md">Your reward has been distributed.</h2>
+									<span>25.01.16/23:52:01</span>
+								</div>
+							</li>
+							<li class="push-item">
+								<div class="push-info">
+									<h2 class="text-md">Your deposit has been completed.</h2>
+									<span>25.01.16/23:52:01</span>
+								</div>
+							</li>
+							<li class="push-item">
+								<div class="push-info">
+									<h2 class="text-md">Your withdrawal has been completed.</h2>
+									<span>25.01.16/23:52:01</span>
+								</div>
+							</li>
+							<li class="push-item">
+								<div class="push-info">
+									<h2 class="text-md">Your withdrawal has been denied</h2>
+									<span>25.01.16/23:52:01</span>
+								</div>
+							</li>
+						</ul>
+					</article>
 					<section class="bg-default">
 						<a href="#">
 							<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
@@ -49,8 +79,8 @@
 				</div>
 
 				<!--menu list-->
-				<section id="menuList" class="menu-list-bg">
-					<div class="menu-list-container bg-white"></div>
+				<section id="menuOverlay" class="menu-list-bg">
+					<div id="menuList" class="menu-list-container bg-white">asdasdasd asdasdasd</div>
 				</section>
 
 				<div class="nav-height"></div>
@@ -381,17 +411,40 @@
 			});
 
 			const menuAction = document.getElementById("menuAction");
+			const menuOverlay = document.getElementById("menuOverlay");
 			const menuList = document.getElementById("menuList");
 			let showMenu = false;
 
 			menuAction.addEventListener("click", function () {
-				if (!showNotification) {
-					menuList.style.display = "flex";
+				if (!showMenu) {
+					menuOverlay.style.display = "flex"; // 메뉴 오버레이 보이기
+					menuList.style.transform = "translateX(0px)"; // 메뉴가 오른쪽에서 왼쪽으로 들어옴
+					menuList.style.opacity = "1"; // 불투명도 1로 설정
+					menuList.style.transition = "transform 0.3s ease-in-out";
 					showMenu = true;
 				} else {
-					menuList.style.display = "none";
+					// 메뉴를 닫을 때 애니메이션 적용
+					menuList.style.transform = "translateX(-100%)"; // 메뉴를 왼쪽으로 숨김
+					menuList.style.opacity = "0"; // 불투명도 0으로 설정
+					menuList.style.transition = "transform 0.5s ease-in-out, opacity 0.5s ease-in-out";
+					menuList.addEventListener("transitionend", function () {
+						// 애니메이션이 끝난 후에만 menuOverlay를 숨김
+						menuOverlay.style.display = "none";
+					});
 					showMenu = false;
 				}
+			});
+
+			menuOverlay.addEventListener("click", function () {
+				// 오버레이 클릭 시 애니메이션을 시작하고 메뉴를 숨기기
+				menuList.style.transform = "translateX(-200%)";
+				menuList.style.opacity = "0";
+				menuList.style.transition = "transform 0.3s ease-in-out, opacity 0.3s ease-in-out";
+				menuList.addEventListener("transitionend", function () {
+					// 애니메이션이 끝난 후에만 menuOverlay를 숨김
+					menuOverlay.style.display = "none";
+				});
+				showMenu = false;
 			});
 		</script>
 	</body>
