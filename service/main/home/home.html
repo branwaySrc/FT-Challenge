@@ -80,7 +80,96 @@
 
 				<!--menu list-->
 				<section id="menuOverlay" class="menu-list-bg">
-					<div id="menuList" class="menu-list-container bg-white">asdasdasd asdasdasd</div>
+					<div id="menuList" class="menu-list-container bg-white">
+						<div class="menu-header-container">
+							<figure>
+								<img src="../../../img/logo.png" width="50" />
+							</figure>
+							<button id="closeMenuBtn">
+								<img src="../../../img/icons/menu-icons/escape.svg" />
+							</button>
+						</div>
+						<section class="menu-container padding-vertical">
+							<ul class="menu-list">
+								<li>
+									<a class="menu-item menu-active">
+										<img src="../../../img/icons/menu-icons/home-active.svg" />
+										<span>Home</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/user-profile.svg" />
+										<span>My Account</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/wallet.svg" />
+										<span>My Wallet</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/referrer.svg" />
+										<span>Referral</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="menu-container padding-vertical">
+							<h2 class="menu-list-header text-lg font-bold">Funding</h2>
+							<ul class="menu-list">
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/staking.svg" />
+										<span>Staking</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/swap.svg" />
+										<span>Swap</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="menu-container padding-vertical">
+							<h2 class="menu-list-header text-lg font-bold">Support</h2>
+							<ul class="menu-list">
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/transition.svg" />
+										<span>Transaction History</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/transition.svg" />
+										<span>Reward History</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/info.svg" />
+										<span>FAQ</span>
+									</a>
+								</li>
+								<li>
+									<a class="menu-item">
+										<img src="../../../img/icons/menu-icons/lang.svg" />
+										<span>Language</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<aside class="logout-btn-box padding-vertical">
+							<button class="bg-red border-rounded-xm">
+								<img src="../../../img/icons/menu-icons/logout.svg" />
+								<span class="text-white font-bold text-md">Log-out</span>
+							</button>
+						</aside>
+					</div>
 				</section>
 
 				<div class="nav-height"></div>
@@ -97,7 +186,7 @@
 						<div>
 							<div class="current-value">
 								<span class="text-md">Total Current Value (USD)</span>
-								<legend class="text-3xl"><span>$</span> 10,000,000.000</legend>
+								<legend class="text-3xl"><span>$</span> 10,000,000.00</legend>
 								<button id="accountRefreshBtn">
 									<img src="../../../img/icons/refresh-value.svg" />
 								</button>
@@ -110,7 +199,7 @@
 									</div>
 									<div class="text-md">
 										<span>BSC/BEP20</span>
-										<span id="walletAddress" class="wallet-address">0a8022dsdasdasd1asf15asf124124124</span>
+										<span id="walletAddress" class="wallet-address">0a80221asf15asf12412DSd2xSD4124</span>
 									</div>
 								</article>
 								<div class="address-value-copy">
@@ -331,7 +420,7 @@
 					<div class="promo-list">
 						<article class="promo-item border-vertical padding-vertical bg-white">
 							<div class="promo-item-header">
-								<h2 class="text-lg">Stacking Event</h2>
+								<h2 class="text-lg">Staking Event</h2>
 								<p class="text-md text-gray-200">The FFT staking event is proud to be the best event that offers various rewards based on levels.</p>
 							</div>
 							<aside class="promo-item-action">
@@ -372,11 +461,22 @@
 						</div>
 					</section>
 				</footer>
+
+				<!--Copied-->
+				<div id="copyAnnounce" class="copy-announce-container padding-vertical">
+					<article class="bg-gray-900 border-rounded-full">
+						<span class="text-white text-sm"
+							>The wallet address has just been <br />
+							copied to the clipboard!</span
+						>
+					</article>
+				</div>
 			</div>
 		</div>
 		<script>
 			const accountRefreshBtn = document.getElementById("accountRefreshBtn");
 			const addressCopyBtn = document.getElementById("addressCopyBtn");
+			const copyAnnounce = document.getElementById("copyAnnounce");
 
 			accountRefreshBtn.addEventListener("click", function () {
 				window.location.reload();
@@ -387,7 +487,10 @@
 				navigator.clipboard
 					.writeText(walletAddress)
 					.then(() => {
-						console.log("텍스트가 복사되었습니다.");
+						copyAnnounce.style.opacity = "1";
+						setTimeout(() => {
+							copyAnnounce.style.opacity = "0";
+						}, 3000);
 					})
 					.catch(err => {
 						console.error("복사실패".err);
@@ -413,6 +516,7 @@
 			const menuAction = document.getElementById("menuAction");
 			const menuOverlay = document.getElementById("menuOverlay");
 			const menuList = document.getElementById("menuList");
+			const closeMenuBtn = document.getElementById("closeMenuBtn");
 			let showMenu = false;
 
 			menuAction.addEventListener("click", function () {
