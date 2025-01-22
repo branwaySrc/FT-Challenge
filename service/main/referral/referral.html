@@ -7,117 +7,81 @@
 		<title></title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./referral.css" />
 		<link rel="stylesheet" href="../../common.css" />
 		<link rel="stylesheet" href="../../../global.css" />
-		<link rel="stylesheet" href="../wallet/wallet.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<div class="screen-safe-view">
 				<div class="nav-height"></div>
 
-				<!--My Asset-->
-				<section class="asset-container">
-					<div class="asset-header padding-vertical">
-						<legend class="heading-xl">
-							My Asset
-							<button id="accountRefreshBtn">
-								<img draggable="false" src="../../../img/icons/refresh-black.svg" />
-							</button>
-						</legend>
-						<p class="text-gray-200 text-md">
-							Refresh to update assets. Delays may occur due to transactions but will apply immediately once completed.
-						</p>
-					</div>
-					<div class="asset-content-container bg-white border-vertical padding-vertical">
-						<section class="asset-table">
-							<div class="asset-box">
-								<div class="coin-statue">
-									<dl>
-										<div class="coin-price">
-											<figure>
-												<img draggable="false" src="../../../img/currencies/fft-icon.svg" />
-											</figure>
-											<div class="coin-label">
-												<h2 class="text-lg bold">FFT</h2>
-												<div class="text-md text-gray-200">
-													<span>≈ $</span>
-													<span>0.99</span>
-												</div>
-											</div>
-										</div>
-										<div class="coin-locked">
-											<h2 class="text-md font-bold">Locked</h2>
-											<span class="coin-locked-value text-gray-200 text-md">200,000.00</span>
-										</div>
-									</dl>
-									<aside class="coin-valid">
-										<dl>
-											<dt class="font-bold text-md">Available</dt>
-											<dd class="font-bold text-md">9,800,000.00</dd>
-											<dl>
-												<dd class="font-bold text-md text-gray-200">≈ $</dd>
-												<dd class="text-gray-200">9,800,000.00</dd>
-											</dl>
-										</dl>
-									</aside>
-								</div>
-								<div class="coin-banking">
-									<a href="./banking-fft/deposit.html" class="banking-action bg-yellow border-rounded-xs">
-										<span class="text-white">Deposit</span>
-									</a>
-									<a href="./banking-fft/withdrawal.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Withdrawal</span>
-									</a>
-									<a href="./banking-fft/transfer.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Transfer</span>
-									</a>
-								</div>
-							</div>
-							<div class="asset-box">
-								<div class="coin-statue">
-									<dl>
-										<div class="coin-price">
-											<figure>
-												<img draggable="false" src="../../../img/currencies/usdt-icon.svg" />
-											</figure>
-											<div class="coin-label">
-												<h2 class="text-lg font-bold">USDT</h2>
-												<div class="text-md text-gray-200">
-													<span>≈ $</span>
-													<span>0.99</span>
-												</div>
-											</div>
-										</div>
-										<div class="coin-locked">
-											<h2 class="text-md font-bold">Locked</h2>
-											<span class="coin-locked-value text-gray-200 text-md">200,000.00</span>
-										</div>
-									</dl>
-									<aside class="coin-valid">
-										<dl>
-											<dt class="font-bold text-md">Available</dt>
-											<dd class="font-bold text-md">9,800,000.00</dd>
-											<dl>
-												<dd class="font-bold text-md text-gray-200">≈ $</dd>
-												<dd class="text-gray-200">9,800,000.00</dd>
-											</dl>
-										</dl>
-									</aside>
-								</div>
-								<div class="coin-banking">
-									<a href="./banking-usdt/deposit.html" class="banking-action bg-yellow border-rounded-xs">
-										<span class="text-white">Deposit</span>
-									</a>
-									<a href="./banking-usdt/withdrawal.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Withdrawal</span>
-									</a>
-									<a href="./banking-usdt/transfer.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Transfer</span>
-									</a>
-								</div>
+				<section class="referral-container">
+					<h2 class="padding-vertical text-xl">My Referral Info</h2>
+					<div class="border-vertical bg-white">
+						<section class="referral-detail">
+							<article class="referral-info bg-gray-900 border-rounded-md">
+								<legend id="referralId" class="text-white text-lg">XADSWR1DD</legend>
+								<button id="addressCopyBtn" class="border-rounded-md bg-yellow">
+									<img src="../../../img/icons/copy-white.svg" />
+								</button>
+							</article>
+							<div class="referral-counter text-md">
+								<span>Referral Count</span>
+								<dl>
+									<dt class="font-bold">01</dt>
+									<dd>invites</dd>
+								</dl>
 							</div>
 						</section>
+					</div>
+				</section>
+
+				<div class="referral-btn-list">
+					<a href="./invitation/referral-invitation.html" class="bg-yellow border-rounded-md">
+						<span class="font-bold text-md text-white">Create Referral Invitation</span>
+					</a>
+					<a href="https://nextjs.org" class="bg-gray-900 border-rounded-md">
+						<span class="font-bold text-md text-white">Learn About the Referral Policy</span>
+					</a>
+				</div>
+
+				<section class="referrer-container">
+					<h2 class="padding-vertical text-xl">Referrer Info</h2>
+					<div class="referrer-detail-box border-vertical bg-white padding-vertical">
+						<div class="referrer-info text-md">
+							<dl>
+								<dt class="text-gray-200">Account</dt>
+								<dd>YouInviteMeHere@gmail.com</dd>
+							</dl>
+							<dl>
+								<dt class="text-gray-200">Referrer ID</dt>
+								<dd>AA10AA</dd>
+							</dl>
+						</div>
+					</div>
+				</section>
+
+				<section class="referee-container">
+					<h2 class="padding-vertical text-xl">My Referee Info</h2>
+					<div class="border-vertical bg-white">
+						<div class="referee-count text-md border-bottom">
+							<span class="text-gray-200">Referee Count</span>
+							<dl>
+								<dd class="font-bold">1</dd>
+								<dt>invites</dt>
+							</dl>
+						</div>
+						<div class="referee-list padding-vertical">
+							<span class="text-gray-200">Account List</span>
+							<ul>
+								<li>IAMYOURREFERRER@gmail.com</li>
+								<li>22OURREFERRER@gmail.com</li>
+								<li>55YOURREFERRER@gmail.com</li>
+								<li>44OURREFERRER@gmail.com</li>
+								<li>33YOURREFERRER@gmail.com</li>
+							</ul>
+						</div>
 					</div>
 				</section>
 
@@ -240,13 +204,13 @@
 									</a>
 								</li>
 								<li>
-									<a href="../wallet/wallet.html" class="menu-active menu-item">
-										<img src="../../../img/icons/menu-icons/wallet-active.svg" />
+									<a href="../wallet/wallet.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/wallet.svg" />
 										<span>My Wallet</span>
 									</a>
 								</li>
 								<li>
-									<a href="../referral/referral.html" class="menu-item">
+									<a href="../referral/referral.html" class="menu-active menu-item">
 										<img src="../../../img/icons/menu-icons/referrer.svg" />
 										<span>Referral</span>
 									</a>
@@ -263,7 +227,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="../../funding/staking/swap.html" class="menu-item">
+									<a href="../../funding/swap/swap.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/swap.svg" />
 										<span>Swap</span>
 									</a>
@@ -308,32 +272,27 @@
 					</div>
 				</div>
 			</section>
-			<!--men ends-->
+			<!--menu ends-->
 		</div>
 
 		<script>
-			const accountRefreshBtn = document.getElementById("accountRefreshBtn");
-			// const addressCopyBtn = document.getElementById("addressCopyBtn");
-			// const copyAnnounce = document.getElementById("copyAnnounce");
+			const addressCopyBtn = document.getElementById("addressCopyBtn");
+			const copyAnnounce = document.getElementById("copyAnnounce");
 
-			accountRefreshBtn.addEventListener("click", function () {
-				window.location.reload();
+			addressCopyBtn.addEventListener("click", function () {
+				const referralId = document.getElementById("referralId").innerText;
+				navigator.clipboard
+					.writeText(referralId)
+					.then(() => {
+						copyAnnounce.style.opacity = "1";
+						setTimeout(() => {
+							copyAnnounce.style.opacity = "0";
+						}, 3000);
+					})
+					.catch(err => {
+						console.error("복사실패".err);
+					});
 			});
-
-			// addressCopyBtn.addEventListener("click", function () {
-			// 	const walletAddress = document.getElementById("walletAddress").innerText;
-			// 	navigator.clipboard
-			// 		.writeText(walletAddress)
-			// 		.then(() => {
-			// 			copyAnnounce.style.opacity = "1";
-			// 			setTimeout(() => {
-			// 				copyAnnounce.style.opacity = "0";
-			// 			}, 3000);
-			// 		})
-			// 		.catch(err => {
-			// 			console.error("복사실패".err);
-			// 		});
-			// });
 
 			const alertAction = document.getElementById("alertAction");
 			const pendingNotificationList = document.getElementById("pendingNotificationList");

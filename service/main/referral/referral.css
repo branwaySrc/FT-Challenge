@@ -1,0 +1,143 @@
+.referral-container > h2,
+.referrer-container > h2,
+.referee-container > h2 {
+	margin: 20px 0px 14px 0px;
+}
+
+.referral-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 16px;
+}
+
+.referral-detail > .referral-info {
+	padding: 10px 10px 10px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.referral-detail > .referral-info > button {
+	padding: 6px;
+}
+
+.referral-detail > .referral-counter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.referral-detail > .referral-counter > dl {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.referral-btn-list {
+	text-align: center;
+	display: flex;
+	padding: 16px;
+	gap: 8px;
+}
+
+.referral-btn-list a {
+	padding: 16px;
+	width: 50%;
+	text-decoration: none;
+	display: block;
+}
+
+.referrer-container .referrer-info {
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.referrer-container .referrer-info > dl {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.referee-container .referee-count {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+}
+
+.referee-container .referee-count > dl {
+	display: flex;
+	gap: 10px;
+}
+
+.referee-container .referee-list {
+	margin-top: 14px;
+}
+
+.referee-container .referee-list > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 10px 0px 24px 0px;
+}
+
+.invitation-card-container {
+	margin : 20px 0px
+}
+
+.invitation-card-header {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-bottom: 10px;
+}
+
+.invitation-card-detail {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	margin: 16px;
+	gap:20px ;
+	position: relative;
+}
+
+.invitation-card-detail > div {
+	display: flex;
+	justify-content: end;
+}
+
+.invitation-card-detail .invite-burger {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.invitation-card-detail .invite-qr {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+}
+
+.invitation-action-list {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+
+.invitation-action-list >li {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+}
+
+.invitation-action-list >li > button {
+	padding:10px;
+
+}

@@ -68,7 +68,7 @@
 }
 
 .border-bottom {
-	border-top: 1px solid #33333320;
+	border-bottom: 1px solid #33333320;
 }
 
 .border-vertical {
@@ -236,13 +236,13 @@
 }
 
 .menu-list-container {
+	max-width: 380px;
 	width: 70%;
 	height: 100%;
 	transform: translateX(-200%);
 	transition: transform 0.8s ease-in-out;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 .menu-header-container {
@@ -263,12 +263,10 @@
 }
 
 .menu-container .menu-list-header {
-	margin-bottom: 4px;
+	margin-bottom: 10px;
 }
 
 .menu-container > .menu-list {
-	list-style: none;
-	color: #33333380;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -277,6 +275,9 @@
 
 .menu-list .menu-active {
 	background-color: #333333;
+}
+
+.menu-list .menu-active > span {
 	color: #fff;
 }
 
@@ -288,6 +289,8 @@
 	padding: 10px 12px;
 	font-size: 13px;
 	font-weight: bold;
+	text-decoration: none;
+	color: #33333380;
 }
 
 .menu-list li:hover {

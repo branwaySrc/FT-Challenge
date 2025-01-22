@@ -15,165 +15,8 @@
 	<body>
 		<div class="screen-wrapper">
 			<div class="screen-safe-view">
-				<!--TopNavigation-->
-				<nav class="nav-container nav-height padding-vertical">
-					<section class="nav-inner">
-						<div>
-							<button id="menuAction" class="menu-btn">
-								<img draggable="false" src="../../../img/icons/menu.svg" />
-							</button>
-						</div>
-						<legend class="logo-btn">
-							<img draggable="false" src="../../../img/logo.png" width="70" />
-						</legend>
-						<div>
-							<button id="alertAction" class="alert-btn">
-								<img draggable="false" src="../../../img/icons/bell.svg" />
-							</button>
-						</div>
-					</section>
-				</nav>
-
-				<!--alert list-->
-				<div id="pendingNotificationList" class="push-list-container bg-white border-vertical">
-					<section class="bg-default">
-						<span class="text-gray-200">Notification</span>
-					</section>
-					<article class="text-gray-200 push-list-box">
-						<!--push notice가 없을 경우 아래 요소 노출-->
-						<!--<span id="emptyList">No pending notification</span>-->
-						<!--push notice가 있는 경우 최대 4개까지-->
-						<ul class="push-list">
-							<li class="push-item">
-								<div class="push-info">
-									<h2 class="text-md">Your reward has been distributed.</h2>
-									<span>25.01.16/23:52:01</span>
-								</div>
-							</li>
-							<li class="push-item">
-								<div class="push-info">
-									<h2 class="text-md">Your deposit has been completed.</h2>
-									<span>25.01.16/23:52:01</span>
-								</div>
-							</li>
-							<li class="push-item">
-								<div class="push-info">
-									<h2 class="text-md">Your withdrawal has been completed.</h2>
-									<span>25.01.16/23:52:01</span>
-								</div>
-							</li>
-							<li class="push-item">
-								<div class="push-info">
-									<h2 class="text-md">Your withdrawal has been denied</h2>
-									<span>25.01.16/23:52:01</span>
-								</div>
-							</li>
-						</ul>
-					</article>
-					<section class="bg-default">
-						<a href="#">
-							<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
-							<span class="font-bold text-gray-200"> View History </span>
-						</a>
-					</section>
-				</div>
-
-				<!--menu list-->
-				<section id="menuOverlay" class="menu-list-bg">
-					<div id="menuList" class="menu-list-container bg-white">
-						<div class="menu-header-container">
-							<figure>
-								<img src="../../../img/logo.png" width="50" />
-							</figure>
-							<button id="closeMenuBtn">
-								<img src="../../../img/icons/menu-icons/escape.svg" />
-							</button>
-						</div>
-						<section class="menu-container padding-vertical">
-							<ul class="menu-list">
-								<li>
-									<a class="menu-item menu-active">
-										<img src="../../../img/icons/menu-icons/home-active.svg" />
-										<span>Home</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/user-profile.svg" />
-										<span>My Account</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/wallet.svg" />
-										<span>My Wallet</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/referrer.svg" />
-										<span>Referral</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<section class="menu-container padding-vertical">
-							<h2 class="menu-list-header text-lg font-bold">Funding</h2>
-							<ul class="menu-list">
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/staking.svg" />
-										<span>Staking</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/swap.svg" />
-										<span>Swap</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<section class="menu-container padding-vertical">
-							<h2 class="menu-list-header text-lg font-bold">Support</h2>
-							<ul class="menu-list">
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/transition.svg" />
-										<span>Transaction History</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/transition.svg" />
-										<span>Reward History</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/info.svg" />
-										<span>FAQ</span>
-									</a>
-								</li>
-								<li>
-									<a class="menu-item">
-										<img src="../../../img/icons/menu-icons/lang.svg" />
-										<span>Language</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<aside class="logout-btn-box padding-vertical">
-							<button class="bg-red border-rounded-xm">
-								<img src="../../../img/icons/menu-icons/logout.svg" />
-								<span class="text-white font-bold text-md">Log-out</span>
-							</button>
-						</aside>
-					</div>
-				</section>
-
-				<div class="nav-height"></div>
 				<!--Account Overview-->
+				<div class="nav-height"></div>
 				<section class="overview-container padding-vertical">
 					<div class="overview-header">
 						<legend class="text-xl">Account Overview</legend>
@@ -350,13 +193,13 @@
 									</aside>
 								</div>
 								<div class="coin-banking">
-									<a href="#" class="banking-action bg-yellow border-rounded-xs">
+									<a href="../wallet/banking-fft/deposit.html" class="banking-action bg-yellow border-rounded-xs">
 										<span class="text-white">Deposit</span>
 									</a>
-									<a href="#" class="banking-action bg-gray-900 border-rounded-xs">
+									<a href="../wallet/banking-fft/withdrawal.html" class="banking-action bg-gray-900 border-rounded-xs">
 										<span class="text-white">Withdrawal</span>
 									</a>
-									<a href="#" class="banking-action bg-gray-900 border-rounded-xs">
+									<a href="../wallet/banking-fft/transfer.html" class="banking-action bg-gray-900 border-rounded-xs">
 										<span class="text-white">Transfer</span>
 									</a>
 								</div>
@@ -393,13 +236,13 @@
 									</aside>
 								</div>
 								<div class="coin-banking">
-									<a href="#" class="banking-action bg-yellow border-rounded-xs">
+									<a href="../wallet/banking-usdt/deposit.html" class="banking-action bg-yellow border-rounded-xs">
 										<span class="text-white">Deposit</span>
 									</a>
-									<a href="#" class="banking-action bg-gray-900 border-rounded-xs">
+									<a href="../wallet/banking-usdt/withdrawal.html" class="banking-action bg-gray-900 border-rounded-xs">
 										<span class="text-white">Withdrawal</span>
 									</a>
-									<a href="#" class="banking-action bg-gray-900 border-rounded-xs">
+									<a href="../wallet/banking-usdt/transfer.html" class="banking-action bg-gray-900 border-rounded-xs">
 										<span class="text-white">Transfer</span>
 									</a>
 								</div>
@@ -472,6 +315,169 @@
 					</article>
 				</div>
 			</div>
+
+			<!--common-->
+			<!--TopNavigation-->
+			<nav class="nav-container nav-height padding-vertical">
+				<section class="nav-inner">
+					<div>
+						<button id="menuAction" class="menu-btn">
+							<img draggable="false" src="../../../img/icons/menu.svg" />
+						</button>
+					</div>
+					<legend class="logo-btn">
+						<img draggable="false" src="../../../img/logo.png" width="70" />
+					</legend>
+					<div>
+						<button id="alertAction" class="alert-btn">
+							<img draggable="false" src="../../../img/icons/bell.svg" />
+						</button>
+					</div>
+				</section>
+			</nav>
+
+			<!--alert list-->
+			<div id="pendingNotificationList" class="push-list-container bg-white border-vertical">
+				<section class="bg-default">
+					<span class="text-gray-200">Notification</span>
+				</section>
+				<article class="text-gray-200 push-list-box">
+					<!--push notice가 없을 경우 아래 요소 노출-->
+					<!--<span id="emptyList">No pending notification</span>-->
+					<!--push notice가 있는 경우 최대 4개까지-->
+					<ul class="push-list">
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your reward has been distributed.</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your deposit has been completed.</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your withdrawal has been completed.</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your withdrawal has been denied</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+					</ul>
+				</article>
+				<section class="bg-default">
+					<a href="#">
+						<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
+						<span class="font-bold text-gray-200"> View History </span>
+					</a>
+				</section>
+			</div>
+			<!--announce end-->
+
+			<!--menu list-->
+			<section id="menuOverlay" class="menu-list-bg">
+				<div id="menuList" class="menu-list-container bg-white">
+					<div>
+						<div class="menu-header-container">
+							<figure>
+								<img src="../../../img/logo.png" width="50" />
+							</figure>
+							<button id="closeMenuBtn">
+								<img src="../../../img/icons/menu-icons/escape.svg" />
+							</button>
+						</div>
+						<section class="menu-container padding-vertical">
+							<ul class="menu-list">
+								<li>
+									<a href="../home/home.html" class="menu-active menu-item">
+										<img src="../../../img/icons/menu-icons/home-active.svg" />
+										<span>Home</span>
+									</a>
+								</li>
+								<li>
+									<a href="../account/account.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/user-profile.svg" />
+										<span>My Account</span>
+									</a>
+								</li>
+								<li>
+									<a href="../wallet/wallet.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/wallet.svg" />
+										<span>My Wallet</span>
+									</a>
+								</li>
+								<li>
+									<a href="../referral/referral.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/referrer.svg" />
+										<span>Referral</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="menu-container padding-vertical">
+							<h2 class="menu-list-header text-lg font-bold">Funding</h2>
+							<ul class="menu-list">
+								<li>
+									<a href="../../funding/staking/staking.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/staking.svg" />
+										<span>Staking</span>
+									</a>
+								</li>
+								<li>
+									<a href="../../funding/swap/swap.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/swap.svg" />
+										<span>Swap</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<section class="menu-container padding-vertical">
+							<h2 class="menu-list-header text-lg font-bold">Support</h2>
+							<ul class="menu-list">
+								<li>
+									<a href="../../support/history/transaction-history.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/transition.svg" />
+										<span>Transaction History</span>
+									</a>
+								</li>
+								<li>
+									<a href="../../support/history/reward-history.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/transition.svg" />
+										<span>Reward History</span>
+									</a>
+								</li>
+								<li>
+									<a href="../../support/faq.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/info.svg" />
+										<span>FAQ</span>
+									</a>
+								</li>
+								<li>
+									<a href="../../support/language.html" class="menu-item">
+										<img src="../../../img/icons/menu-icons/lang.svg" />
+										<span>Language</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<aside class="logout-btn-box padding-vertical">
+							<button class="bg-red border-rounded-xm">
+								<img src="../../../img/icons/menu-icons/logout.svg" />
+								<span class="text-white font-bold text-md">Log-out</span>
+							</button>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+			<!--common-->
 		</div>
 		<script>
 			const accountRefreshBtn = document.getElementById("accountRefreshBtn");

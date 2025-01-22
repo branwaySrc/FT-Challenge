@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../../../common.css" />
+		<link rel="stylesheet" href="../../../../../global.css" />
+		<link rel="stylesheet" href="../../../wallet/wallet.css" />
+	</head>
+	<body>
+		<div class="screen-wrapper">
+			<div class="screen-safe-view">
+				<div class="nav-height"></div>
+
+				<section>
+					<div class="padding-vertical">
+						<h2 class="banking-header">Success</h2>
+					</div>
+					<div class="confirm-content-container border-vertical bg-white padding-vertical">
+						<span class="text-md text-gray-200">Information</span>
+						<section class="confirm-info border-rounded-lg bg-default text-md">
+							<dl>
+								<dt class="text-gray-200">Address</dt>
+								<dd class="address">0xd8c4d011a34b5f2eb6a458d4da5445f84fa5445f84fa5445f84f</dd>
+							</dl>
+							<div>
+								<dl>
+									<dt class="text-gray-200">Token</dt>
+									<dd>USDT</dd>
+								</dl>
+								<dl>
+									<dt class="text-gray-200">Network</dt>
+									<dd>BSC/BEP20</dd>
+								</dl>
+								<dl>
+									<dt class="text-gray-200">Network fee</dt>
+									<dd>10</dd>
+								</dl>
+							</div>
+							<dl>
+								<dt class="text-gray-200">Amount</dt>
+								<dd>790</dd>
+							</dl>
+						</section>
+						<div class="email-verification-container">
+							<p class="text-md text-gray-200">
+								Please be aware that the transfer period might be extended due to network delays and internal security procedures.
+							</p>
+							<div class="process-btn-box">
+								<a href="../../wallet.html" class="process-btn bg-gray-900 border-rounded-lg">
+									<span class="font-bold text-lg text-white">Close</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<div class="footer-img">
+					<figure>
+						<img draggable="false" src="../../../../../img/burger-friends.png" />
+					</figure>
+				</div>
+				<footer class="footer-container bg-gray-900 padding-vertical text-sm">
+					<section class="padding-vertical">
+						<figure><img draggable="false" src="../../../../../img/logo_dark.png" width="50" /></figure>
+						<div>
+							<span class="text-gray-100">
+								FTT does not direct its website and services to any individual in any country in which the use of its website and services are
+								prohibited by local laws or regulations. When accessing this website from a country in which its use may or may not be prohibited, it
+								is the user's responsibility to ensure that any use of the website or services adhere to local laws or regulations. FFT does not
+								affirm that the information on its website is suitable to all jurisdictions.
+							</span>
+						</div>
+					</section>
+				</footer>
+				<!--Copied-->
+				<div id="copyAnnounce" class="copy-announce-container padding-vertical">
+					<article class="bg-gray-900 border-rounded-full">
+						<span class="text-white text-sm"
+							>The wallet address has just been <br />
+							copied to the clipboard!</span
+						>
+					</article>
+				</div>
+			</div>
+			<!--TopNavigation-->
+			<nav class="nav-container nav-height padding-vertical">
+				<section class="nav-inner">
+					<div>
+						<button id="goBackAction" class="goBack-btn">
+							<img draggable="false" src="../../../../../img/icons/arrow-left.svg" />
+						</button>
+					</div>
+					<legend class="logo-btn">
+						<img draggable="false" src="../../../../../img/logo.png" width="70" />
+					</legend>
+					<div>
+						<button id="alertAction" class="alert-btn">
+							<img draggable="false" src="../../../../../img/icons/bell.svg" />
+						</button>
+					</div>
+				</section>
+			</nav>
+			<!--TopNavigation end-->
+
+			<!--announce-->
+			<div id="pendingNotificationList" class="push-list-container bg-white border-vertical">
+				<section class="bg-default">
+					<span class="text-gray-200">Notification</span>
+				</section>
+				<article class="text-gray-200 push-list-box">
+					<!--push notice가 없을 경우 아래 요소 노출-->
+					<!--<span id="emptyList">No pending notification</span>-->
+					<!--push notice가 있는 경우 최대 4개까지-->
+					<ul class="push-list">
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your reward has been distributed.</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your deposit has been completed.</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your withdrawal has been completed.</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+						<li class="push-item">
+							<div class="push-info">
+								<h2 class="text-md">Your withdrawal has been denied</h2>
+								<span>25.01.16/23:52:01</span>
+							</div>
+						</li>
+					</ul>
+				</article>
+				<section class="bg-default">
+					<a href="#">
+						<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
+						<span class="font-bold text-gray-200"> View History </span>
+					</a>
+				</section>
+			</div>
+		<script>
+			const alertAction = document.getElementById("alertAction");
+			const pendingNotificationList = document.getElementById("pendingNotificationList");
+			let showNotification = false;
+
+			alertAction.addEventListener("click", function () {
+				if (!showNotification) {
+					pendingNotificationList.style.transform = "translateY(0px)";
+					pendingNotificationList.style.transition = "transform 0.3s ease-in-out";
+					showNotification = true;
+					console.log(window.scrollY);
+				} else {
+					pendingNotificationList.style.transform = "translateY(-200%)";
+					showNotification = false;
+				}
+			});
+
+
+			const goBackAction = document.getElementById("goBackAction");
+			goBackAction.addEventListener("click", function () {
+				window.location.href = "../../wallet.html";
+			});
+		</script>
+	</body>
+</html>

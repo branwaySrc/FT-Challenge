@@ -1,0 +1,83 @@
+.account-tier-container > h2,
+.account-referral-container > h2 {
+	margin: 20px 0px 14px 0px;
+}
+
+.account-tier-content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.account-tier-content-container .tier-box {
+	margin-top: 20px;
+}
+
+.account-tier-content-container .tier-box > figure {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+}
+
+.account-tier-content-container > aside {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-bottom: 20px;
+}
+
+.account-tier-content-container > aside > dl {
+	display: flex;
+	justify-content: space-between;
+}
+
+.account-referral-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 16px;
+}
+
+.account-referral-detail > .referral-info {
+	padding: 10px 10px 10px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.account-referral-detail > .referral-info > button {
+	padding: 6px;
+}
+
+.account-referral-detail > .referral-counter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.account-referral-detail > .referral-counter > dl {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.referral-notice {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.referral-notice > span > span {
+	text-decoration: underline;
+}
+
+.create-referral-link {
+	margin-top: 24px;
+}
+
+.create-referral-link > a {
+	padding: 16px;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
