@@ -1,68 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../../../common.css" />
-		<link rel="stylesheet" href="../../../../global.css" />
-		<link rel="stylesheet" href="../referral.css" />
-		<title>Document</title>
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./nft.css" />
+		<link rel="stylesheet" href="../../common.css" />
+		<link rel="stylesheet" href="../../../global.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<div class="screen-safe-view">
+				<!--content-->
+
 				<div class="nav-height"></div>
-				<section class="invitation-card-container">
-					<div class="invitation-card-header padding-vertical">
-						<h2 class="text-xl">Referral Invitation</h2>
-						<p class="text-md text-gray-200">Send this invitation to your friends, and it will bring you amazing benefits!</p>
+
+				<div class="padding-vertical nft-header">
+					<legend class="heading-xl">Purchase</legend>
+				</div>
+				<section class="nft-product border-vertical bg-white">
+					<figure class="border-rounded-xl">
+						<img src="./../../../img/nft/Citizen.png" width="250" />
+					</figure>
+					<legend class="font-bold text-lg">FFT Common Citizen</legend>
+				</section>
+				<section class="nft-product-info border-vertical bg-white text-md">
+					<div class="nft-price-label">
+						<span class="font-bold">Price</span>
+						<dl>
+							<dt class="font-bold">48,000</dt>
+							<dl>
+								<dd><img src="./../../../img/currencies/fft-dark.svg" width="16" /></dd>
+								<dd class="font-bold text-gray-200">FFT</dd>
+							</dl>
+						</dl>
 					</div>
-					<div class="border-vertical bg-white">
-						<section>
-							<div class="invitation-card-detail bg-yellow border-rounded-lg">
-								<h2 class="text-white text-xl">We invite you to FastWorld! Join now!</h2>
-								<div>
-									<figure class="invite-qr bg-white border-rounded-lg">
-										<img src="../../../../img/sample-qr.png" />
-									</figure>
-									<figure class="invite-burger">
-										<img src="../../../../img/invite-burger.png" width="220" />
-									</figure>
-								</div>
-							</div>
-							<ol class="invitation-action-list border-top font-bold text-md">
-								<li>
-									<button class="bg-yellow border-rounded-md">
-										<img src="./../../../../img/icons/link-black.svg" />
-									</button>
-									<span>URL</span>
-								</li>
-								<li>
-									<button class="bg-yellow border-rounded-md">
-										<img src="./../../../../img/icons/save-black.svg" />
-									</button>
-									<span> Save </span>
-								</li>
-								<li>
-									<button class="bg-yellow border-rounded-md">
-										<img src="./../../../../img/icons/share.svg" />
-									</button>
-									<span> Share </span>
-								</li>
-							</ol>
-						</section>
+					<div class="font-bold purchase-amount">
+						<span>Amount</span>
+						<span>1</span>
 					</div>
+					<div class="font-bold purchase-capacity">
+						<span>Maximum Carrying Capacity</span>
+						<span>1</span>
+					</div>
+					<div>
+						<span class="text-md text-gray-200">
+							Through your NFT, you are granted the right to share in the transactions and fees generated within the FFT ecosystem. You will receive
+							2% of the total amount generated.
+						</span>
+					</div>
+					<aside class="purchase-confirm-btn">
+						<a href="./nft-success.html" class="bg-yellow border-rounded-lg">
+							<span class="font-bold text-white">Confirm Purchase</span>
+						</a>
+					</aside>
 				</section>
 
 				<div class="footer-img">
 					<figure>
-						<img draggable="false" src="../../../../img/burger-friends.png" />
+						<img draggable="false" src="../../../img/burger-friends.png" />
 					</figure>
 				</div>
 				<footer class="footer-container bg-gray-900 padding-vertical text-sm">
 					<section class="padding-vertical">
-						<figure><img draggable="false" src="../../../../img/logo_dark.png" width="50" /></figure>
+						<figure><img draggable="false" src="../../../img/logo_dark.png" width="50" /></figure>
 						<div>
 							<span class="text-gray-100">
 								FTT does not direct its website and services to any individual in any country in which the use of its website and services are
@@ -88,19 +92,22 @@
 				<section class="nav-inner">
 					<div>
 						<button id="goBackAction" class="goBack-btn">
-							<img draggable="false" src="../../../../img/icons/arrow-left.svg" />
+							<img draggable="false" src="../../../img/icons/arrow-left.svg" />
 						</button>
 					</div>
 					<legend class="logo-btn">
-						<img draggable="false" src="../../../../img/logo.png" width="70" />
+						<img draggable="false" src="../../../img/logo.png" width="70" />
 					</legend>
 					<div>
 						<button id="alertAction" class="alert-btn">
-							<img draggable="false" src="../../../../img/icons/bell.svg" />
+							<img draggable="false" src="../../../img/icons/bell.svg" />
 						</button>
 					</div>
 				</section>
 			</nav>
+			<!--TopNavigation end-->
+
+			<!--announce-->
 			<div id="pendingNotificationList" class="push-list-container bg-white border-vertical">
 				<section class="bg-default">
 					<span class="text-gray-200">Notification</span>
@@ -144,6 +151,7 @@
 				</section>
 			</div>
 		</div>
+
 		<script>
 			const alertAction = document.getElementById("alertAction");
 			const pendingNotificationList = document.getElementById("pendingNotificationList");

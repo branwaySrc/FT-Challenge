@@ -1,0 +1,129 @@
+.nft-header {
+	margin: 16px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.nft-list {
+	padding: 16px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	justify-items: center;
+}
+
+.nft-list > li {
+	max-width: 150px;
+}
+
+.nft-list > li > figure {
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+}
+
+.nft-list > li > .product-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 6px;
+}
+
+.product-info {
+	padding: 0px 4px;
+}
+
+.product-info > dl {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product-info > dl > dd {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.nft-buy-btn {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.nft-product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	gap: 12px;
+}
+
+.nft-product > figure {
+	height: 240px;
+	width: 240px;
+}
+
+.nft-product-info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+}
+
+.nft-product-info .nft-price-label,
+.purchase-amount,
+.purchase-capacity {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nft-product-info .nft-price-label > dl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
+.nft-product-info .nft-price-label > dl > dl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4px;
+}
+
+.purchase-confirm-btn > a {
+	display: flex;
+	margin-top: 5px;
+	text-align: center;
+	padding: 14px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.nft-success-container {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	text-align: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.nft-success-container > figure {
+	width: 240px;
+	height: 240px;
+}
+
+.nft-success-container .success-header,
+.nft-success-container .success-announce {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
