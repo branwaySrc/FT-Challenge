@@ -53,9 +53,29 @@ input::placeholder {
 	flex-direction: column;
 	text-align: center;
 	gap: 15px;
+	margin-bottom: 10px;
 }
 
 .calculator-btn > a {
 	text-decoration: none;
 	padding: 12px;
+}
+
+.network-fee {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: 10px;
+	gap: 5px;
+}
+
+.swap-success-announce {
+	text-align: center;
+	margin: 20px;
+}
+
+.swap-success-img {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
 }

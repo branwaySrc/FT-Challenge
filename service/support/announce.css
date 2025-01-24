@@ -1,0 +1,11 @@
+.announce-list {
+	list-style: none;
+}
+
+.announce-list > li > a {
+	text-decoration: none;
+}
+
+.announce-list > li > a :hover {
+	background-color: #f9f9f9;
+}

@@ -7,60 +7,135 @@
 		<title></title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./nft.css" />
+		<link rel="stylesheet" href="./../../../components/item.css" />
+		<link rel="stylesheet" href="./../../../components/tile.css" />
+		<link rel="stylesheet" href="./staking.css" />
 		<link rel="stylesheet" href="../../common.css" />
 		<link rel="stylesheet" href="../../../global.css" />
-		<link rel="stylesheet" href="../../../components/tile.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<main class="screen-safe-view">
-				<!--content-->
-				<div class="padding-vertical nft-header">
-					<legend class="heading-xl">Buy NFT</legend>
-					<span class="text-gray-200 text-md"
-						>Become a member and gain the right to share in the transactions and fees generated within the ecosystem.</span
-					>
+				<!--Tab-Horizontal-Nav-->
+				<ul class="i__tab-horizontal-nav">
+					<li>
+						<a href="./staking.html">Staking List</a>
+					</li>
+					<li>
+						<a class="active-page" href="#">Active Staking</a>
+					</li>
+				</ul>
+
+				<!--Page-header-->
+				<div class="i__page-header margin-vertical">
+					<h2>Active Stakings</h2>
+					<p>You can earn higher returns based on your staking level.</p>
 				</div>
-				<section class="nft-container border-vertical bg-white">
-					<ol class="nft-list">
-						<li>
-							<figure class="border-rounded-lg">
-								<img src="./../../../img/nft/Citizen.png" width="150" />
+
+				<section class="staking-item-container border-vertical bg-white">
+					<article class="i__staked-item-card bg-yellow">
+						<div>
+							<h2>F1 Staking</h2>
+							<div class="staking-status">
+								<p>Statue</p>
+								<span class="state">Active</span>
+							</div>
+						</div>
+						<aside>
+							<figure>
+								<img alt="burger" src="../../../img/invite-burger.png" width="140" />
 							</figure>
-							<dl class="product-info">
-								<dt>FFT Common Citizen</dt>
-								<dl>
-									<dd class="font-bold">48,000</dd>
-									<dd>
-										<img draggable="false" src="./../../../img/currencies/fft-dark.svg" width="13" />
-										<span class="font-bold">FFT</span>
-									</dd>
-								</dl>
-							</dl>
-							<a href="./nft-purchase.html" class="nft-buy-btn bg-gray-900 border-rounded-md">
-								<span class="text-white font-bold">Buy</span>
-							</a>
-						</li>
-						<li>
-							<figure class="border-rounded-lg">
-								<img src="./../../../img/nft/Noble.png" />
+							<div class="staking-details">
+								<ul class="grid">
+									<li>
+										<dl class="data">
+											<dt>100~1000</dt>
+											<dd>Staking amount</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt>
+												<img alt="fwt-icon" src="../../../img/currencies/fft-dark.svg" width="16" />
+												<span>FWT</span>
+											</dt>
+											<dd>Reward</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt><span>1%</span>&nbsp;Daily</dt>
+											<dd>Return Info</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt>300%</dt>
+											<dd>Max return</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</article>
+
+					<!--Proceed-Link-Btn-->
+					<a href="./staking-summary.html" class="i__proceed-link-btn bg-gray-900">
+						<p>View Details</p>
+					</a>
+				</section>
+
+				<section class="staking-item-container border-vertical bg-white">
+					<article class="i__staked-item-card bg-gray-200">
+						<div>
+							<h2>F1 Staking</h2>
+							<div class="staking-status">
+								<p>Statue</p>
+								<span class="state">Expired</span>
+							</div>
+						</div>
+						<aside>
+							<figure>
+								<img alt="burger" src="../../../img/invite-burger.png" width="140" />
 							</figure>
-							<dl class="product-info">
-								<dt>FFT Noble</dt>
-								<dl>
-									<dd class="font-bold">128,000</dd>
-									<dd>
-										<img draggable="false" src="./../../../img/currencies/fft-dark.svg" width="13" />
-										<span class="font-bold">FFT</span>
-									</dd>
-								</dl>
-							</dl>
-							<a href="./nft-purchase.html" class="nft-buy-btn bg-gray-900 border-rounded-md">
-								<span class="text-white font-bold">Buy</span>
-							</a>
-						</li>
-					</ol>
+							<div class="staking-details">
+								<ul class="grid">
+									<li>
+										<dl class="data">
+											<dt>100~1000</dt>
+											<dd>Staking amount</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt>
+												<img alt="fwt-icon" src="../../../img/currencies/fft-dark.svg" width="16" />
+												<span>FWT</span>
+											</dt>
+											<dd>Reward</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt><span>1%</span>&nbsp;Daily</dt>
+											<dd>Return Info</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt>300%</dt>
+											<dd>Max return</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</article>
+
+					<!--Proceed-Link-Btn-->
+					<a href="./staking-claim.html" class="i__proceed-link-btn bg-gray-900">
+						<p>View Details</p>
+					</a>
 				</section>
 
 				<div class="footer-img">
@@ -91,7 +166,6 @@
 					</article>
 				</div>
 			</main>
-
 			<!--Top-Nav-->
 			<nav class="t__top-nav">
 				<ul>
@@ -145,25 +219,25 @@
 						<section class="separator">
 							<ul class="list">
 								<li>
-									<a href="../../main/home/home.html" class="menu-item">
+									<a href="../home/home.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/home.svg" />
 										<span>Home</span>
 									</a>
 								</li>
 								<li>
-									<a href="../../main/account/account.html" class="menu-item">
+									<a href="../account/account.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/user-profile.svg" />
 										<span>My Account</span>
 									</a>
 								</li>
 								<li>
-									<a href="../../main/wallet/wallet.html" class="menu-item">
+									<a href="../wallet/wallet.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/wallet.svg" />
 										<span>My Wallet</span>
 									</a>
 								</li>
 								<li>
-									<a href="../../main/referral/referral.html" class="menu-item">
+									<a href="../referral/referral.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/referrer.svg" />
 										<span>Referral</span>
 									</a>
@@ -174,7 +248,7 @@
 							<h2 class="list-header">Funding</h2>
 							<ul class="list">
 								<li>
-									<a href="../../funding/staking/staking.html" class="menu-item">
+									<a href="../../funding/staking/staking.html" class="menu-active menu-item">
 										<img src="../../../img/icons/menu-icons/staking.svg" />
 										<span>Staking</span>
 									</a>
@@ -186,7 +260,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="../../funding/nft/nft.html" class="menu-active menu-item">
+									<a href="../../funding/nft/nft.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/nft.svg" />
 										<span>NFT</span>
 									</a>
@@ -209,7 +283,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="../../support/announce.html" class="menu-item">
+									<a href="../../support/announcement.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/info.svg" />
 										<span>Announcement</span>
 									</a>
@@ -231,6 +305,7 @@
 					</div>
 				</div>
 			</section>
+
 			<!--common-->
 		</div>
 		<script defer src="./../../../script.js"></script>

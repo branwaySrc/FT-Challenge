@@ -7,23 +7,72 @@
 		<title></title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./announce.css" />
-		<link rel="stylesheet" href="../common.css" />
-		<link rel="stylesheet" href="../../global.css" />
+		<link rel="stylesheet" href="./swap.css" />
+		<link rel="stylesheet" href="../../common.css" />
+		<link rel="stylesheet" href="../../../global.css" />
+		<link rel="stylesheet" href="../../../components/item.css" />
 		<link rel="stylesheet" href="../../../components/tile.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<main class="screen-safe-view">
 				<!--content-->
+
+				<div class="padding-vertical calculator-header">
+					<legend class="heading-xl">Confirmation</legend>
+				</div>
+				<section class="calculator-container border-vertical bg-white">
+					<div class="calculator-box">
+						<div class="calculator-inner bg-gray-900 border-rounded-lg">
+							<section>
+								<div class="base-token text-gray-200">
+									<span class="text-gray-100">Base Token</span>
+									<span id="equivalentValue" class="text-2xl">100</span>
+								</div>
+								<aside class="currency-balance">
+									<div>
+										<img src="../../../img/currencies/usdt-icon.svg" alt="USDT icon" />
+									</div>
+									<div>
+										<h2 class="text-gray-200 text-lg">USDT</h2>
+									</div>
+								</aside>
+							</section>
+
+							<section>
+								<div class="base-token text-gray-200">
+									<span class="text-gray-100">You will Receive</span>
+									<span id="equivalentValue" class="text-2xl">500</span>
+								</div>
+								<aside class="currency-balance">
+									<div>
+										<img src="../../../img/currencies/fft-icon.svg" alt="FFT icon" />
+									</div>
+									<div>
+										<h2 class="text-gray-200 text-lg">FFT</h2>
+									</div>
+								</aside>
+							</section>
+						</div>
+						<div class="network-fee padding-vertical">
+							<span class="text-gray-200">Network fee</span>
+							<span><img src="./../../../img/currencies/fft-dark.svg" /></span>
+							<span class="font-bold">1%</span>
+						</div>
+					</div>
+					<div class="calculator-btn padding-vertical">
+						<a href="./swap-success.html" class="bg-gray-900 border-rounded-lg font-bold text-lg text-white">Confirm</a>
+					</div>
+				</section>
+
 				<div class="footer-img">
 					<figure>
-						<img draggable="false" src="../../img/burger-friends.png" />
+						<img draggable="false" src="../../../img/burger-friends.png" />
 					</figure>
 				</div>
 				<footer class="footer-container bg-gray-900 padding-vertical text-sm">
 					<section class="padding-vertical">
-						<figure><img draggable="false" src="../../img/logo_dark.png" width="50" /></figure>
+						<figure><img draggable="false" src="../../../img/logo_dark.png" width="50" /></figure>
 						<div>
 							<span class="text-gray-100">
 								FTT does not direct its website and services to any individual in any country in which the use of its website and services are
@@ -44,6 +93,7 @@
 					</article>
 				</div>
 			</main>
+
 			<!--Top-Nav-->
 			<nav class="t__top-nav">
 				<ul>
@@ -81,6 +131,7 @@
 					</a>
 				</section>
 			</div>
+
 			<!--common-->
 		</div>
 		<script defer src="./../../../script.js"></script>

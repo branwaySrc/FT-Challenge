@@ -1,0 +1,176 @@
+#tile-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+/*Tab-nav*/
+
+.t__top-nav {
+	background-color: #fff;
+	border-bottom: 1px solid #33333320;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	max-width: 520px;
+	min-width: 360px;
+	padding: 0px 24px;
+	top: 0;
+}
+
+.t__top-nav > ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	height: 68px;
+}
+
+.t__top-nav .item button {
+	padding: 6px;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+}
+
+/*Transaction-Update*/
+
+.t__transaction-update-list {
+	position: fixed;
+	top: 68px;
+	transform: translateY(-200%);
+	transition: transform 0.3s ease-in-out;
+	max-height: 380px;
+	min-height: 140px;
+	z-index: 99;
+	max-width: 520px;
+	min-width: 360px;
+	width: 100%;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+}
+
+.t__transaction-update-list > section {
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9f9f9;
+}
+
+.t__transaction-update-list > section > legend {
+	color: #898989;
+}
+
+.t__transaction-update-list > section > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-weight: bold;
+	gap: 4px;
+	color: #898989;
+}
+
+/*Menu-Slide*/
+
+.t__menu-list {
+	background-color: #33333380;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	display: none;
+	max-width: 520px;
+	min-width: 360px;
+}
+
+.t__menu-list-container {
+	max-width: 380px;
+	width: 70%;
+	height: 100%;
+	transform: translateX(-200%);
+	transition: transform 0.8s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.t__menu-list-container .header {
+	padding: 10px 14px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.t__menu-list-container .header > button {
+	border: none;
+	background-color: #fff;
+}
+
+.t__menu-list-container .separator {
+	margin-bottom: 10px;
+	padding: 0px 16px;
+}
+
+.t__menu-list-container .separator .list-header {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.t__menu-list-container .separator > .list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.t__menu-list-container .logout {
+	padding: 0px 16px;
+}
+
+.t__menu-list-container .logout > button {
+	background-color: #e32929;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 8px 12px;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	border: none;
+}
+
+.list .menu-active {
+	background-color: #333333;
+}
+
+.list .menu-active > span {
+	color: #fff;
+}
+
+.list .menu-item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	border-radius: 4px;
+	padding: 10px 12px;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #33333380;
+}
+
+.list li:hover {
+	background-color: #33333310;
+	border-radius: 4px;
+}

@@ -1,0 +1,39 @@
+.staking-item-container {
+	padding: 16px;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.staking-activate-container {
+	padding: 24px 16px;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.staking-success-container {
+	padding: 24px 16px;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.staking-claim-container,
+.staking-summary-container {
+	padding: 24px 16px;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.staking-claim-container .staking-claim-fieldset,
+.staking-summary-container .staking-summary-fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

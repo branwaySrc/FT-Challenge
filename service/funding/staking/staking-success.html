@@ -7,23 +7,80 @@
 		<title></title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../../../../common.css" />
-		<link rel="stylesheet" href="../../../../../global.css" />
-		<link rel="stylesheet" href="../../../wallet/wallet.css" />
-		<link rel="stylesheet" href="../../../../../components/item.css" />
-		<link rel="stylesheet" href="../../../../../components/tile.css" />
+		<link rel="stylesheet" href="./staking.css" />
+		<link rel="stylesheet" href="./../../../components/item.css" />
+		<link rel="stylesheet" href="./../../../components/tile.css" />
+		<link rel="stylesheet" href="../../../service/common.css" />
+		<link rel="stylesheet" href="../../../global.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<main class="screen-safe-view">
+				<!--content-->
+
+				<!--Page-header-->
+				<div class="i__page-header margin-vertical">
+					<h2>F1 Staking</h2>
+					<p>Get FFT by staking and get 1% daily reward</p>
+				</div>
+
+				<section class="staking-success-container border-vertical bg-white">
+					<!--Staking-Item-Card-->
+					<article class="i__staking-item-card bg-yellow">
+						<div>
+							<h2>F1 Staking</h2>
+							<p>Get FFT by staking and get 1% daily reward Click to see more details</p>
+						</div>
+						<aside>
+							<figure>
+								<img alt="burger" src="../../../img/invite-burger.png" width="140" />
+							</figure>
+							<div class="staking-details">
+								<ul class="grid">
+									<li>
+										<dl class="data">
+											<dt>100~1000</dt>
+											<dd>Staking amount</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt>
+												<img alt="fwt-icon" src="../../../img/currencies/fft-icon.svg" width="16" />
+												<span>FWT</span>
+											</dt>
+											<dd>Reward</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt><span>1%</span>&nbsp;Daily</dt>
+											<dd>Return Info</dd>
+										</dl>
+									</li>
+									<li>
+										<dl class="data">
+											<dt>300%</dt>
+											<dd>Max return</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</article>
+					<!--Proceed-Link-Btn-->
+					<a href="./staking-vault.html" class="i__proceed-link-btn bg-gray-900">
+						<p>Close</p>
+					</a>
+				</section>
 				<div class="footer-img">
 					<figure>
-						<img draggable="false" src="../../../../../img/burger-friends.png" />
+						<img draggable="false" src="../../../img/burger-friends.png" />
 					</figure>
 				</div>
 				<footer class="footer-container bg-gray-900 padding-vertical text-sm">
 					<section class="padding-vertical">
-						<figure><img draggable="false" src="../../../../../img/logo_dark.png" width="50" /></figure>
+						<figure><img draggable="false" src="../../../img/logo_dark.png" width="50" /></figure>
 						<div>
 							<span class="text-gray-100">
 								FTT does not direct its website and services to any individual in any country in which the use of its website and services are
@@ -50,17 +107,17 @@
 				<ul>
 					<li class="item">
 						<button class="jsGoBackBtn">
-							<img draggable="false" src="../../../../../img/icons/arrow-left.svg" />
+							<img draggable="false" src="../../../img/icons/arrow-left.svg" />
 						</button>
 					</li>
 					<li class="item">
 						<legend>
-							<img alt="fwt-logo" draggable="false" src="../../../../../img/logo.png" width="70" />
+							<img alt="fwt-logo" draggable="false" src="../../../img/logo.png" width="70" />
 						</legend>
 					</li>
 					<li class="item">
 						<button class="jsLatestHistoryBtn">
-							<img draggable="false" src="../../../../../img/icons/bell.svg" />
+							<img draggable="false" src="../../../img/icons/bell.svg" />
 						</button>
 					</li>
 				</ul>
@@ -85,7 +142,6 @@
 
 			<!--common-->
 		</div>
-
 		<script defer src="./../../../script.js"></script>
 	</body>
 </html>
