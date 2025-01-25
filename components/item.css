@@ -599,7 +599,7 @@
 }
 
 .i__overview-card .identity-card {
-	background-image: radial-gradient(circle 897px at 9% 80.3%, #e32929, rgba(234, 161, 15, 0.9) 100.2%);
+	background-image: radial-gradient(circle 897px at 9% 80.3%, #fba541, #e36429);
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
