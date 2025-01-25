@@ -524,94 +524,151 @@
 	transform: scaleX(-1);
 }
 
+/* Overview-Card */
 
+.i__overview-card {
+	display: flex;
+	flex-direction: column;
+}
 
-/*Account-Info-Card*/
-.visa-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 300px;
-  height: 180px;
-  background-image: radial-gradient(
-    circle 897px at 9% 80.3%,
-    rgba(55, 60, 245, 1) 0%,
-    rgba(234, 161, 15, 0.9) 100.2%
-  );
-  border-radius: 10px;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  gap: 15px;
+.i__overview-card .total-value-box {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background-image: radial-gradient(circle 897px at 9% 80.3%, #fba541, rgba(234, 161, 15, 0.9) 100.2%);
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	overflow: hidden;
+	padding: 10px 14px;
+	margin: 0px 16px;
 }
-.logoContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: fit-content;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 18px;
+
+.i__overview-card .total-value-box .header {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
 }
-.svgLogo {
-  height: 40px;
-  width: auto;
+
+.i__overview-card .total-value-box .header h2 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 4px;
 }
-.inputstyle::placeholder {
-  color: #ffffff;
+
+.i__overview-card .total-value-box .header p {
+	font-size: 12px;
+	color: #333333;
 }
-.inputstyle {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  caret-color: red;
-  font-size: 13px;
-  height: 25px;
-  letter-spacing: 1.5px;
+
+.i__overview-card .total-value-box .header > button {
+	background-color: #333;
+	border: none;
+	padding: 8px;
+	border-radius: 6px;
 }
-.number-container {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
+
+.i__overview-card .total-value-box .total-value {
+	font-size: 24px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f9f9f9;
+	padding: 8px;
+	border-radius: 6px;
 }
-#cardNumber {
-  width: 100%;
-  height: 25px;
+
+.i__overview-card .total-value-box .total-value legend {
+	letter-spacing: -1px;
 }
-.name-date-cvv-container {
-  width: 100%;
-  height: 25px;
-  display: flex;
-  gap: 10px;
+
+.i__overview-card .total-value-box .total-value .unit {
+	color: #33333380;
 }
-.name-wrapper {
-  width: 60%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
+
+.i__overview-card .total-value-box .total-value a {
+	border: #ffffff30;
+	background-color: #333;
+	border-radius: 4px;
+	padding: 8px 16px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
 }
-.expiry-wrapper,
-.cvv-wrapper {
-  width: 30%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
+
+.i__overview-card .identity-card {
+	background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.9) 100.2%);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
+	width: 100%;
+	max-width: 380px;
+	height: 220px;
 }
-.cvv-wrapper {
-  width: 10%;
+
+.i__overview-card .identity-card .header {
+	display: flex;
+	justify-content: space-between;
+	color: #f9f9f950;
+	letter-spacing: 2px;
+	font-size: 15px;
 }
-#expiry,
-#cvv {
-  width: 100%;
+
+.i__overview-card .identity-card .user-info {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	justify-content: center;
 }
-.input-label {
-  font-size: 8px;
-  letter-spacing: 1.5px;
-  color: #e2e2e2;
-  width: 100%;
+
+.i__overview-card .identity-card .user-info .address-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.i__overview-card .identity-card .user-info .address-box .truncated {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 230px;
+}
+
+.i__overview-card .identity-card .user-info .detail-box {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.i__overview-card .identity-card .user-info .data {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.i__overview-card .identity-card .user-info .referral-box {
+	display: flex;
+	gap: 8px;
+}
+
+.i__overview-card .identity-card .user-info .data dt {
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: -0.3px;
+	color: #ffffff80;
+}
+.i__overview-card .identity-card .user-info .data dd {
+	color: #f9f9f9;
+	font-size: 13px;
+}
+
+.i__overview-card .identity-card .user-info .copy-btn {
+	padding: 8px;
+	border-radius: 6px;
+	border: none;
+	background-color: #333;
 }

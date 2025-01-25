@@ -87,6 +87,71 @@
 						</aside>
 					</div>
 
+					<!--Overview-Card-->
+							<section class="overview-container padding-vertical">
+					<div class="overview-header">
+						<legend class="text-xl">Account Overview</legend>
+						<p class="text-md text-gray-200">
+							Even if the deposit has been made, it may not be reflected due to server request delays or caching. Please make sure to refresh the
+							page.
+						</p>
+					</div>
+					<!--Overview-Card-->
+					<div class="i__overview-card">
+						<section class="total-value-box">
+							<div class="header">
+								<div>
+									<h2>Total Value (USD)</h2>
+									<p>Total Estimate Currency Value</p>
+								</div>
+								<button class="refresh-btn jsRefreshAction">
+									<img src="./../../../img/icons/refresh-value.svg" />
+								</button>
+							</div>
+							<div class="total-value">
+								<legend>
+									<span class="unit">$</span>
+									<span>1,000.00</span>
+								</legend>
+								<a href="#">Deposit</a>
+							</div>
+						</section>
+						<aside class="identity-card">
+							<div class="header">
+								<legend>FWT CITIZENSHIP</legend>
+								<figure>
+									<img src="./../../../img/coin_spinning/shape.svg" width="30" />
+								</figure>
+							</div>
+							<section class="user-info">
+								<div class="address-box">
+									<dl class="data">
+										<dt>WALLET ADDRESS</dt>
+										<dd class="truncated jsCopyValue">0xA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9T0</dd>
+									</dl>
+									<button class="copy-btn jsCopyBtn">
+										<img src="./../../../img/icons/copy-white.svg" />
+									</button>
+								</div>
+								<div class="detail-box">
+									<dl class="data">
+										<dt>WALLET HOLDER</dt>
+										<dd>jin-mao-not-your</dd>
+									</dl>
+									<dl class="data">
+										<dt>NETWORK</dt>
+										<dd>BSC/BEP20</dd>
+									</dl>
+									<dl class="data">
+										<dt>REFERRAL ID</dt>
+										<dd class="jsCopyValue">00AA00</dd>
+									</dl>
+								</div>
+							</section>
+						</aside>
+					</div>
+			
+
 					<!--Announce-Card-->
 					<article class="i__announce-card">
 						<div class="header">
@@ -303,31 +368,6 @@
 							</div>
 						</div>
 					</figure>
-
-					<!--Account-Info-Card-->
-					<div class="visa-card">
-						<div class="logoContainer"></div>
-						<div class="number-container">
-							<label class="input-label" for="cardNumber">CARD NUMBER</label>
-							<input class="inputstyle" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" name="cardNumber" type="text" />
-						</div>
-
-						<div class="name-date-cvv-container">
-							<div class="name-wrapper">
-								<label class="input-label" for="holderName">CARD HOLDER</label>
-								<input class="inputstyle" id="holderName" placeholder="NAME" type="text" />
-							</div>
-
-							<div class="expiry-wrapper">
-								<label class="input-label" for="expiry">VALID THRU</label>
-								<input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" />
-							</div>
-							<div class="cvv-wrapper">
-								<label class="input-label" for="cvv">CVV</label>
-								<input class="inputstyle" placeholder="***" maxlength="3" id="cvv" type="password" />
-							</div>
-						</div>
-					</div>
 
 					<!---->
 				</section>

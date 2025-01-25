@@ -5,6 +5,10 @@
 	margin-top: 20px;
 }
 
+.overview-container > .i__overview-card {
+	margin-top: 30px;
+}
+
 .overview-container .overview-header,
 .asset-container .asset-header,
 .currency-rate-container .currency-rate-header,
