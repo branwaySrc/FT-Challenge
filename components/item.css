@@ -535,7 +535,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	background-image: radial-gradient(circle 897px at 9% 80.3%, #fba541, rgba(234, 161, 15, 0.9) 100.2%);
+	background-color: #333;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
 	overflow: hidden;
@@ -553,11 +553,12 @@
 	font-size: 15px;
 	font-weight: bold;
 	margin-bottom: 4px;
+	color: #f9f9f9;
 }
 
 .i__overview-card .total-value-box .header p {
 	font-size: 12px;
-	color: #333333;
+	color: #ffffff80;
 }
 
 .i__overview-card .total-value-box .header > button {
@@ -568,7 +569,7 @@
 }
 
 .i__overview-card .total-value-box .total-value {
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: bold;
 	display: flex;
 	align-items: center;
@@ -598,7 +599,7 @@
 }
 
 .i__overview-card .identity-card {
-	background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.9) 100.2%);
+	background-image: radial-gradient(circle 897px at 9% 80.3%, #e32929, rgba(234, 161, 15, 0.9) 100.2%);
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
@@ -606,7 +607,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 20px;
 	width: 100%;
-	max-width: 380px;
 	height: 220px;
 }
 
