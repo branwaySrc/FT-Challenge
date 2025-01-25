@@ -16,7 +16,28 @@
 	<body>
 		<div class="screen-wrapper">
 			<main class="screen-safe-view">
-				
+				<div class="i__page-header margin-vertical">
+					<h2>Failed</h2>
+				</div>
+				<section class="transaction-failed-container border-vertical bg-white">
+					<figure>
+						<img src="./../../../../../img/icons/message-x-black.svg" />
+					</figure>
+
+					<!--Support-paragraph-->
+					<p class="i__support-paragraph">
+						<span>
+							An issue occurred during the processing. It may be a temporary transaction error, so please try again later. If this situation
+							continues, please contact customer service.
+						</span>
+					</p>
+
+					<!--Proceed-Link-Btn-->
+					<a href="./../../wallet.html" class="i__proceed-link-btn bg-gray-900">
+						<p>Close</p>
+					</a>
+				</section>
+
 				<div class="footer-img">
 					<figure>
 						<img draggable="false" src="../../../../../img/burger-friends.png" />
@@ -46,24 +67,26 @@
 				</div>
 			</main>
 			<!--TopNavigation-->
-			<nav class="nav-container nav-height padding-vertical">
-				<section class="nav-inner">
-					<div>
-						<button id="goBackAction" class="goBack-btn">
-							<img draggable="false" src="../../../../../img/icons/arrow-left.svg" />
+			<nav class="t__top-nav">
+				<ul>
+					<li class="item">
+						<button class="jsGoBackBtn">
+							<img draggable="false" src="../../../img/icons/arrow-left.svg" />
 						</button>
-					</div>
-					<legend class="logo-btn">
-						<img draggable="false" src="../../../../../img/logo.png" width="70" />
-					</legend>
-					<div>
-						<button id="alertAction" class="alert-btn">
-							<img draggable="false" src="../../../../../img/icons/bell.svg" />
+					</li>
+					<li class="item">
+						<legend>
+							<img alt="fwt-logo" draggable="false" src="../../../img/logo.png" width="70" />
+						</legend>
+					</li>
+					<li class="item">
+						<button class="jsLatestHistoryBtn">
+							<img draggable="false" src="../../../img/icons/bell.svg" />
 						</button>
-					</div>
-				</section>
+					</li>
+				</ul>
 			</nav>
-				<!--Top-Nav-->
+			<!--Top-Nav-->
 			<nav class="t__top-nav">
 				<ul>
 					<li class="item">
@@ -101,7 +124,6 @@
 				</section>
 			</div>
 
-		
 			<!--common-->
 		</div>
 		<script defer src="./../../../script.js"></script>

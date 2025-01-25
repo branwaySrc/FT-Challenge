@@ -1,159 +1,153 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>FT Wallet-Login</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./login.css" />
 
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>FT Wallet-Login</title>
-	<meta name="description" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="./login.css" />
+		<!--공통-->
+		<link rel="stylesheet" href="./global.css" />
+		<link rel="stylesheet" href="./auth/common.css" />
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-	<!--공통-->
-	<link rel="stylesheet" href="./global.css" />
-	<link rel="stylesheet" href="./auth/common.css" />
-	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
-</head>
-
-<body>
-	<div class="bg-wrapper bg-animate">
-		<figure class="mascot">
-			
-			<img draggable="false" src="./img/burger-character.png" alt="main-mascot" />
-		</figure>
-		<div class="login-content-wrapper signature-stroke">
-			<figure class="melting-cheese-topper">
-				<img draggable="false" src="./img/cheese-melting.jpg" />
+	<body>
+		<div class="bg-wrapper bg-animate">
+			<figure class="mascot">
+				<img draggable="false" src="./img/burger-character.png" alt="main-mascot" />
 			</figure>
+			<div class="login-content-wrapper signature-stroke">
+				<figure class="melting-cheese-topper">
+					<img draggable="false" src="./img/cheese-melting.jpg" />
+				</figure>
 
-			<!--lang-->
-			<section class="lang-container">
-				<ul class="lang-action">
-					<li>
-						<img draggable="false" src="./img/lang/us.png" alt="english" title="english" width="20"
-							height="20" />
-					</li>
-					<li class="signature-font">
-						<p>English</p>
-					</li>
-					<li>
-						<img draggable="false" src="./img/icons/chevron-down.png" alt="english" title="english"
-							width="20" height="20" />
-					</li>
-				</ul>
-			</section>
+				<!--lang-->
+				<section class="lang-container">
+					<ul class="lang-action">
+						<li>
+							<img draggable="false" src="./img/lang/us.png" alt="english" title="english" width="20" height="20" />
+						</li>
+						<li class="signature-font">
+							<p>English</p>
+						</li>
+						<li>
+							<img draggable="false" src="./img/icons/chevron-down.png" alt="english" title="english" width="20" height="20" />
+						</li>
+					</ul>
+				</section>
 
-			<!--login-->
-			<section class="login-container">
-				<div class="email-box">
-					<div>
-						<h2 class="signature-font signature-title">Account (E-mail)</h2>
-						<input id="emailInput" class="signature-input" type="email" placeholder="Email" required />
+				<!--login-->
+				<section class="login-container">
+					<div class="email-box">
+						<div>
+							<h2 class="signature-font signature-title">Account (E-mail)</h2>
+							<input id="emailInput" class="signature-input" type="email" placeholder="Email" required />
+						</div>
+						<article id="emailInputWarning" class="warning-text inputWarning">
+							<p>Please enter a valid email address!</p>
+						</article>
 					</div>
-					<article id="emailInputWarning" class="warning-text inputWarning">
-						<p>Please enter a valid email address!</p>
-					</article>
-				</div>
-				<div class="password-box">
-					<div>
-						<h2 class="signature-font signature-title">Password</h2>
-						<input id="pwInput" class="signature-input" type="password" placeholder="Password" required />
+					<div class="password-box">
+						<div>
+							<h2 class="signature-font signature-title">Password</h2>
+							<input id="pwInput" class="signature-input" type="password" placeholder="Password" required />
+						</div>
+						<article id="pwInputWarning" class="warning-text">
+							<p>Password must contain 8~16 letters</p>
+						</article>
 					</div>
-					<article id="pwInputWarning" class="warning-text">
-						<p>Password must contain 8~16 letters</p>
-					</article>
-				</div>
-			</section>
+				</section>
 
-			<!--actions-->
-			<section class="action-container">
-				<div class="find-pw">
-					<a class="action-link" href="#">Forgot your password?</a>
-				</div>
-				<div class="login-btn-box">
-					<figure class="melting-cheese-btn">
-						<img draggable="false" src="./img/cheese-melting2.jpg" />
-					</figure>
-					<button id="loginBtn" class="signature-stroke action-btn">Login</button>
-				</div>
-				<div class="create-acc">
-					<a class="action-link" href="./auth/register/referral.html">New to FT? Open an account</a>
-				</div>
-			</section>
-		</div>
-
-		<!--Overlay-->
-		<div id="loginOverlay" class="overlay-wrapper">
-			<div class="overlay-container signature-stroke">
-				<div class="content-box">
-					<img src="./img/icons/message-x.png" width="40" />
-					<h2 class="signature-font">
-						<span> The following<br /></span>
-						<span> error(s) occurred</span>
-					</h2>
-				</div>
-				<aside class="content-box">
-					<div>
-						<p>
-							The login or password you entered<br />
-							is incorrect or not exist
-						</p>
+				<!--actions-->
+				<section class="action-container">
+					<div class="find-pw">
+						<a class="action-link" href="#">Forgot your password?</a>
 					</div>
-					<button id="closeLoginOverlayBtn" class="action-btn signature-stroke">Got it</button>
-				</aside>
+					<div class="login-btn-box">
+						<figure class="melting-cheese-btn">
+							<img draggable="false" src="./img/cheese-melting2.jpg" />
+						</figure>
+						<button id="loginBtn" class="signature-stroke action-btn">Login</button>
+					</div>
+					<div class="create-acc">
+						<a class="action-link" href="./auth/register/referral.html">New to FT? Open an account</a>
+					</div>
+				</section>
 			</div>
+
+			<!--Overlay-->
+			<div id="loginOverlay" class="overlay-wrapper">
+				<div class="overlay-container signature-stroke">
+					<div class="content-box">
+						<img src="./img/icons/message-x.png" width="40" />
+						<h2 class="signature-font">
+							<span> The following<br /></span>
+							<span> error(s) occurred</span>
+						</h2>
+					</div>
+					<aside class="content-box">
+						<div>
+							<p>
+								The login or password you entered<br />
+								is incorrect or not exist
+							</p>
+						</div>
+						<button id="closeLoginOverlayBtn" class="action-btn signature-stroke">Got it</button>
+					</aside>
+				</div>
+			</div>
+
+			<!--footer-->
 		</div>
+	</body>
+	<script>
+		// 이메일 입력 필드 진입&벗어날 때 경고 메시지 숨기기입니다.
+		const emailInput = document.getElementById("emailInput");
+		const warningEmailText = document.getElementById("emailInputWarning");
+		warningEmailText.style.display = "none";
 
-		<!--footer-->
-	</div>
-</body>
-<script>
-	// 이메일 입력 필드 진입&벗어날 때 경고 메시지 숨기기입니다.
-	const emailInput = document.getElementById("emailInput");
-	const warningEmailText = document.getElementById("emailInputWarning");
-	warningEmailText.style.display = "none";
+		emailInput.addEventListener("input", function () {
+			const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,16}$/;
 
-	emailInput.addEventListener("input", function () {
-		const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,16}$/;
+			if (!emailPattern.test(emailInput.value) || emailInput.value === "") {
+				warningEmailText.style.display = "block";
+			} else {
+				warningEmailText.style.display = "none";
+			}
+		});
 
-		if (!emailPattern.test(emailInput.value) || emailInput.value === "") {
-			warningEmailText.style.display = "block";
-		} else {
-			warningEmailText.style.display = "none";
-		}
-	});
+		// 비밀번호 입력 필드 진입&벗어날 때 경고 메시지 숨기기입니다.
+		const pwInput = document.getElementById("pwInput");
+		const warningPwText = document.getElementById("pwInputWarning");
+		warningPwText.style.display = "none";
 
-	// 비밀번호 입력 필드 진입&벗어날 때 경고 메시지 숨기기입니다.
-	const pwInput = document.getElementById("pwInput");
-	const warningPwText = document.getElementById("pwInputWarning");
-	warningPwText.style.display = "none";
+		pwInput.addEventListener("input", function () {
+			const pwPattern = /^[a-zA-Z0-9]{8,16}$/;
 
-	pwInput.addEventListener("input", function () {
-		const pwPattern = /^[a-zA-Z0-9]{8,16}$/;
+			if (!pwPattern.test(pwInput.value) || pwPattern.value === "") {
+				warningPwText.style.display = "block";
+			} else {
+				warningPwText.style.display = "none";
+			}
+		});
 
-		if (!pwPattern.test(pwInput.value) || pwPattern.value === "") {
-			warningPwText.style.display = "block";
-		} else {
-			warningPwText.style.display = "none";
-		}
-	});
+		// 오버레이 버튼 상호작용입니다.
+		document.getElementById("loginBtn").addEventListener("click", function () {
+			document.getElementById("loginOverlay").style.display = "flex";
+		});
 
-	// 오버레이 버튼 상호작용입니다.
-	document.getElementById("loginBtn").addEventListener("click", function () {
-		document.getElementById("loginOverlay").style.display = "flex";
-	});
-
-	document.getElementById("closeLoginOverlayBtn").addEventListener("click", function () {
-		document.getElementById("loginOverlay").style.display = "none";
-	});
-</script>
-
+		document.getElementById("closeLoginOverlayBtn").addEventListener("click", function () {
+			document.getElementById("loginOverlay").style.display = "none";
+		});
+	</script>
 </html>

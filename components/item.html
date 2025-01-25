@@ -61,6 +61,32 @@
 						</span>
 					</p>
 
+					<!--Wallet-Overview-Card-->
+					<div class="i__wallet-overview-card">
+						<div class="value-box">
+							<p>Total Current Value (USD)</p>
+							<legend class="total-value">$<span>1,000.00</span></legend>
+							<button class="jsRefreshAction">
+								<img src="./../img/icons/refresh-value.svg" />
+							</button>
+						</div>
+						<aside class="wallet-info-box">
+							<div class="wallet-info">
+								<ol class="data-header">
+									<li>Network</li>
+									<li>Address</li>
+								</ol>
+								<dl class="data">
+									<dt>BSC/BEP20</dt>
+									<dd class="jsCopyValue truncated">0xA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9T0</dd>
+								</dl>
+							</div>
+							<button class="copy-btn jsCopyBtn">
+								<img src="./../img/icons/copy-white.svg" />
+							</button>
+						</aside>
+					</div>
+
 					<!--Announce-Card-->
 					<article class="i__announce-card">
 						<div class="header">
@@ -220,6 +246,88 @@
 							</div>
 						</aside>
 					</article>
+
+					<!--Coin Spinning-->
+					<figure>
+						<div class="coin">
+							<div class="side heads">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									xml:space="preserve"
+									width="100%"
+									height="100%"
+									version="1.1"
+									shape-rendering="geometricPrecision"
+									text-rendering="geometricPrecision"
+									image-rendering="optimizeQuality"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									viewBox="0 0 4091.27 4091.73"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<g>
+										<path
+											fill="#E32929"
+											fill-rule="nonzero"
+											d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z"
+										></path>
+										<image href="./../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600" height="1600" />
+									</g>
+								</svg>
+							</div>
+							<div class="side tails">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="svg_back"
+									xml:space="preserve"
+									width="100%"
+									height="100%"
+									version="1.1"
+									shape-rendering="geometricPrecision"
+									text-rendering="geometricPrecision"
+									image-rendering="optimizeQuality"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									viewBox="0 0 4091.27 4091.73"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<g>
+										<path
+											fill="#E32929"
+											fill-rule="nonzero"
+											d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z"
+										></path>
+										<image href="./../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600" height="1600" />
+									</g>
+								</svg>
+							</div>
+						</div>
+					</figure>
+
+					<!--Account-Info-Card-->
+					<div class="visa-card">
+						<div class="logoContainer"></div>
+						<div class="number-container">
+							<label class="input-label" for="cardNumber">CARD NUMBER</label>
+							<input class="inputstyle" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" name="cardNumber" type="text" />
+						</div>
+
+						<div class="name-date-cvv-container">
+							<div class="name-wrapper">
+								<label class="input-label" for="holderName">CARD HOLDER</label>
+								<input class="inputstyle" id="holderName" placeholder="NAME" type="text" />
+							</div>
+
+							<div class="expiry-wrapper">
+								<label class="input-label" for="expiry">VALID THRU</label>
+								<input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" />
+							</div>
+							<div class="cvv-wrapper">
+								<label class="input-label" for="cvv">CVV</label>
+								<input class="inputstyle" placeholder="***" maxlength="3" id="cvv" type="password" />
+							</div>
+						</div>
+					</div>
 
 					<!---->
 				</section>

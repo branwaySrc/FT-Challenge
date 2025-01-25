@@ -283,3 +283,17 @@
 .transfer-banking-notice {
 	padding-bottom: 10px;
 }
+
+.transaction-failed-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 500px;
+	padding: 34px;
+	gap: 34px;
+}
+
+.transaction-failed-container > figure {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
