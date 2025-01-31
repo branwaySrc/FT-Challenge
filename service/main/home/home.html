@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="../../../components/item.css" />
 		<link rel="stylesheet" href="../../common.css" />
 		<link rel="stylesheet" href="./home.css" />
+		<link rel="stylesheet" href="../../../components/item.css" />
 	</head>
 
 	<body>
@@ -84,44 +85,90 @@
 
 				<!--Currency Rate-->
 				<section class="currency-rate-container">
-					<div class="currency-rate-header padding-vertical">
-						<legend class="heading-xl">Currency Rate</legend>
+					<div class="i__page-header margin-vertical">
+						<h2>FWT Rate</h2>
 					</div>
-					<div class="currency-rate-content bg-white border-vertical padding-vertical">
-						<section>
-							<ul class="currency-list">
-								<li class="currency-fft">
-									<div class="currency-label">
-										<figure>
-											<img draggable="false" src="../../../img/currencies/fft-icon.svg" />
-										</figure>
-										<h2 class="text-lg">FFT</h2>
+					<div class="currency-rate-content-container bg-white border-vertical padding-vertical">
+						<section class="currency-rate-content">
+							<figure class="coin-container">
+								<div class="coin">
+									<div class="side heads">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xml:space="preserve"
+											width="100%"
+											height="100%"
+											version="1.1"
+											shape-rendering="geometricPrecision"
+											text-rendering="geometricPrecision"
+											image-rendering="optimizeQuality"
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											viewBox="0 0 4091.27 4091.73"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+										>
+											<g>
+												<path
+													fill="#E32929"
+													fill-rule="nonzero"
+													d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z"
+												></path>
+												<image href="../../../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600" height="1600" />
+											</g>
+										</svg>
 									</div>
-									<dl>
-										<dt class="font-bold text-gray-200">USDT</dt>
-										<dd class="text-gray-200"><span>≈ $</span><span> 0.1</span></dd>
-									</dl>
-								</li>
-								<li class="currency-usdt">
-									<div class="currency-label">
-										<figure>
-											<img draggable="false" src="../../../img/currencies/usdt-icon.svg" />
-										</figure>
-										<h2 class="text-lg">USDT</h2>
+									<div class="side tails">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="svg_back"
+											xml:space="preserve"
+											width="100%"
+											height="100%"
+											version="1.1"
+											shape-rendering="geometricPrecision"
+											text-rendering="geometricPrecision"
+											image-rendering="optimizeQuality"
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											viewBox="0 0 4091.27 4091.73"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+										>
+											<g>
+												<path
+													fill="#E32929"
+													fill-rule="nonzero"
+													d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z"
+												></path>
+												<image href="../../../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600" height="1600" />
+											</g>
+										</svg>
 									</div>
-									<dl>
-										<dt class="font-bold text-gray-200">USD</dt>
-										<dd class="text-gray-200"><span>≈ $</span><span> 1</span></dd>
-									</dl>
-								</li>
-							</ul>
+								</div>
+							</figure>
+							<aside class="currency-rate">
+								<div class="currency-detail">
+									<p class="symbol">FWT</p>
+									<span>FAST WORLD TOKEN</span>
+									<div>
+										<span>≈ $</span>
+										<span>0.99</span>
+									</div>
+								</div>
+								<div class="currency-detail">
+									<p class="font-bold">Network</p>
+									<span>BSC/BEP20</span>
+								</div>
+							</aside>
 						</section>
-						<div class="link-action">
-							<a href="#" class="bg-yellow border-rounded-lg font-bold text-lg text-white">Go to Swap Page</a>
-							<p class="text-gray-200 text-md">
-								The current swap rate may vary due<br />
-								to real-time fluctuations and differences at the exact<br />
-								time of swap confirmation.
+						<div class="link-section">
+							<a class="i__proceed-link-btn bg-yellow">
+								<p>Go to Swap</p>
+							</a>
+							<p class="i__support-paragraph">
+								<span>
+									With staking, you can receive daily rewards and team rewards. Once the maximum return of 300% is reached, the staking will
+									automatically unlock, and you can claim your rewards.
+								</span>
 							</p>
 						</div>
 					</div>
@@ -146,16 +193,12 @@
 												<img draggable="false" src="../../../img/currencies/fft-icon.svg" />
 											</figure>
 											<div class="coin-label">
-												<h2 class="text-lg bold">FFT</h2>
+												<h2 class="text-lg bold">FWT</h2>
 												<div class="text-md text-gray-200">
 													<span>≈ $</span>
 													<span>0.99</span>
 												</div>
 											</div>
-										</div>
-										<div class="coin-locked">
-											<h2 class="text-md font-bold">Locked</h2>
-											<span class="coin-locked-value text-gray-200 text-md">200,000.00</span>
 										</div>
 									</dl>
 									<aside class="coin-valid">
@@ -195,10 +238,6 @@
 													<span>0.99</span>
 												</div>
 											</div>
-										</div>
-										<div class="coin-locked">
-											<h2 class="text-md font-bold">Locked</h2>
-											<span class="coin-locked-value text-gray-200 text-md">200,000.00</span>
 										</div>
 									</dl>
 									<aside class="coin-valid">
