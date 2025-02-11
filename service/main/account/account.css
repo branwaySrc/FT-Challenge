@@ -9,6 +9,13 @@
 	gap: 10px;
 }
 
+.account-tier-container .account-header-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 0px;
+}
+
 .account-tier-content-container .tier-box {
 	margin-top: 20px;
 }
