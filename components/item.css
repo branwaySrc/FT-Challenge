@@ -672,3 +672,27 @@
 	border: none;
 	background-color: #333;
 }
+
+
+/* Link-action */
+
+.i__link-action {
+	display: flex;
+}
+
+.i__link-action .link {
+	padding: 18px;
+	text-decoration: none;
+	color: #333333;
+	border-radius: 10px;
+	background-color: #333;
+	margin-top: 10px;
+
+}
+
+.i__link-action .link .inner-text {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	
+}

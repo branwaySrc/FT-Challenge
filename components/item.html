@@ -1,375 +1,369 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./item.css" />
-		<link rel="stylesheet" href="../global.css" />
-		<link rel="stylesheet" href="../service/common.css" />
-	</head>
-	<body>
-		<div class="screen-wrapper">
-			<div class="screen-safe-view">
-				<section id="items-container" class="padding-vertical">
-					<!--Tab-Horizontal-Nav-->
-					<ul class="i__tab-horizontal-nav">
-						<li class="current-tab">
-							<a class="active-page" href="#">Tab-Link</a>
-						</li>
-						<li>
-							<a href="#">Tab-Link</a>
-						</li>
-					</ul>
 
-					<!--Page-header-->
-					<div class="i__page-header">
-						<h2>Title</h2>
-						<p>Paragraph sentence</p>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./item.css" />
+	<link rel="stylesheet" href="../global.css" />
+	<link rel="stylesheet" href="../service/common.css" />
+</head>
+
+<body>
+	<div class="screen-wrapper">
+		<div class="screen-safe-view">
+			<section id="items-container" class="padding-vertical">
+				<!--Tab-Horizontal-Nav-->
+				<ul class="i__tab-horizontal-nav">
+					<li class="current-tab">
+						<a class="active-page" href="#">Tab-Link</a>
+					</li>
+					<li>
+						<a href="#">Tab-Link</a>
+					</li>
+				</ul>
+
+				<!--Page-header-->
+				<div class="i__page-header">
+					<h2>Title</h2>
+					<p>Paragraph sentence</p>
+				</div>
+
+				<!--Page-header-aside-->
+				<div class="i__page-header__aside">
+					<h2>Title</h2>
+					<aside>
+						<button id="btn-action" class="jsRefreshAction">
+							<img src="./../img/icons/refresh-black.svg" />
+						</button>
+					</aside>
+				</div>
+
+				<!--Label-Input-->
+				<form class="i__label-input">
+					<label for="title">Amount</label>
+					<input />
+					<p>Valid amount :&nbsp;<span class="variable">&nbsp;800.00</span>&nbsp;USDT</p>
+				</form>
+
+				<!--Proceed-Link-Btn-->
+				<a class="i__proceed-link-btn bg-gray-900">
+					<p>Send Request</p>
+				</a>
+
+				<!--Support-paragraph-->
+				<p class="i__support-paragraph">
+					<span>
+						With staking, you can receive daily rewards and team rewards. Once the maximum return of 300% is
+						reached, the staking will automatically
+						unlock, and you can claim your rewards.
+					</span>
+				</p>
+
+				<!--Wallet-Overview-Card-->
+				<div class="i__wallet-overview-card">
+					<div class="value-box">
+						<p>Total Current Value (USD)</p>
+						<legend class="total-value">$<span>1,000.00</span></legend>
+						<button class="jsRefreshAction">
+							<img src="./../img/icons/refresh-value.svg" />
+						</button>
 					</div>
+					<aside class="wallet-info-box">
+						<div class="wallet-info">
+							<ol class="data-header">
+								<li>Network</li>
+								<li>Address</li>
+							</ol>
+							<dl class="data">
+								<dt>BSC/BEP20</dt>
+								<dd class="jsCopyValue truncated">0xA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9T0</dd>
+							</dl>
+						</div>
+						<button class="copy-btn jsCopyBtn">
+							<img src="./../img/icons/copy-white.svg" />
+						</button>
+					</aside>
+				</div>
 
-					<!--Page-header-aside-->
-					<div class="i__page-header__aside">
-						<h2>Title</h2>
-						<aside>
-							<button id="btn-action" class="jsRefreshAction">
-								<img src="./../img/icons/refresh-black.svg" />
-							</button>
-						</aside>
-					</div>
-
-					<!--Label-Input-->
-					<form class="i__label-input">
-						<label for="title">Amount</label>
-						<input />
-						<p>Valid amount :&nbsp;<span class="variable">&nbsp;800.00</span>&nbsp;USDT</p>
-					</form>
-
-					<!--Proceed-Link-Btn-->
-					<a class="i__proceed-link-btn bg-gray-900">
-						<p>Send Request</p>
-					</a>
-
-					<!--Support-paragraph-->
-					<p class="i__support-paragraph">
-						<span>
-							With staking, you can receive daily rewards and team rewards. Once the maximum return of 300% is reached, the staking will automatically
-							unlock, and you can claim your rewards.
-						</span>
+				<!--Overview-Card-->
+				<div class="overview-header">
+					<legend class="text-xl">Account Overview</legend>
+					<p class="text-md text-gray-200">
+						Even if the deposit has been made, it may not be reflected due to server request delays or
+						caching. Please make sure to refresh the
+						page.
 					</p>
-
-					<!--Wallet-Overview-Card-->
-					<div class="i__wallet-overview-card">
-						<div class="value-box">
-							<p>Total Current Value (USD)</p>
-							<legend class="total-value">$<span>1,000.00</span></legend>
-							<button class="jsRefreshAction">
-								<img src="./../img/icons/refresh-value.svg" />
+				</div>
+				<!--Overview-Card-->
+				<div class="i__overview-card">
+					<section class="total-value-box">
+						<div class="header">
+							<div>
+								<h2>Total Value (USD)</h2>
+								<p>Total Estimate Currency Value</p>
+							</div>
+							<button class="refresh-btn jsRefreshAction">
+								<img src="./../../../img/icons/refresh-value.svg" />
 							</button>
 						</div>
-						<aside class="wallet-info-box">
-							<div class="wallet-info">
-								<ol class="data-header">
-									<li>Network</li>
-									<li>Address</li>
-								</ol>
+						<div class="total-value">
+							<legend>
+								<span class="unit">$</span>
+								<span>1,000.00</span>
+							</legend>
+							<a href="#">Deposit</a>
+						</div>
+					</section>
+					<aside class="identity-card">
+						<div class="header">
+							<legend>FWT CITIZENSHIP</legend>
+							<figure>
+								<img src="./../../../img/coin_spinning/shape.svg" width="30" />
+							</figure>
+						</div>
+						<section class="user-info">
+							<div class="address-box">
 								<dl class="data">
-									<dt>BSC/BEP20</dt>
-									<dd class="jsCopyValue truncated">0xA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9T0</dd>
+									<dt>WALLET ADDRESS</dt>
+									<dd class="truncated jsCopyValue">0xA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9T0</dd>
 								</dl>
-							</div>
-							<button class="copy-btn jsCopyBtn">
-								<img src="./../img/icons/copy-white.svg" />
-							</button>
-						</aside>
-					</div>
-
-					<!--Overview-Card-->
-					<div class="overview-header">
-						<legend class="text-xl">Account Overview</legend>
-						<p class="text-md text-gray-200">
-							Even if the deposit has been made, it may not be reflected due to server request delays or caching. Please make sure to refresh the
-							page.
-						</p>
-					</div>
-					<!--Overview-Card-->
-					<div class="i__overview-card">
-						<section class="total-value-box">
-							<div class="header">
-								<div>
-									<h2>Total Value (USD)</h2>
-									<p>Total Estimate Currency Value</p>
-								</div>
-								<button class="refresh-btn jsRefreshAction">
-									<img src="./../../../img/icons/refresh-value.svg" />
+								<button class="copy-btn jsCopyBtn">
+									<img src="./../../../img/icons/copy-white.svg" />
 								</button>
 							</div>
-							<div class="total-value">
-								<legend>
-									<span class="unit">$</span>
-									<span>1,000.00</span>
-								</legend>
-								<a href="#">Deposit</a>
+							<div class="detail-box">
+								<dl class="data">
+									<dt>WALLET HOLDER</dt>
+									<dd>jin-mao-not-your</dd>
+								</dl>
+								<dl class="data">
+									<dt>NETWORK</dt>
+									<dd>BSC/BEP20</dd>
+								</dl>
+								<dl class="data">
+									<dt>REFERRAL ID</dt>
+									<dd class="jsCopyValue">00AA00</dd>
+								</dl>
 							</div>
 						</section>
-						<aside class="identity-card">
-							<div class="header">
-								<legend>FWT CITIZENSHIP</legend>
-								<figure>
-									<img src="./../../../img/coin_spinning/shape.svg" width="30" />
-								</figure>
-							</div>
-							<section class="user-info">
-								<div class="address-box">
-									<dl class="data">
-										<dt>WALLET ADDRESS</dt>
-										<dd class="truncated jsCopyValue">0xA1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9T0</dd>
-									</dl>
-									<button class="copy-btn jsCopyBtn">
-										<img src="./../../../img/icons/copy-white.svg" />
-									</button>
-								</div>
-								<div class="detail-box">
-									<dl class="data">
-										<dt>WALLET HOLDER</dt>
-										<dd>jin-mao-not-your</dd>
-									</dl>
-									<dl class="data">
-										<dt>NETWORK</dt>
-										<dd>BSC/BEP20</dd>
-									</dl>
-									<dl class="data">
-										<dt>REFERRAL ID</dt>
-										<dd class="jsCopyValue">00AA00</dd>
-									</dl>
-								</div>
-							</section>
-						</aside>
+					</aside>
+				</div>
+
+				<!--Announce-Card-->
+				<article class="i__announce-card">
+					<div class="header">
+						<h2><span>Your Reward</span> has been distributed.</h2>
+						<p>25.01.16/23:52:01</p>
 					</div>
+					<aside>
+						<p class="truncated">
+							With staking, you can receive daily rewards and team rewards. Once the maximum return of
+							300% is reached, the staking will
+							automatically unlock, and you can claim your rewards.
+						</p>
+						<ul class="details">
+							<li>Reward received</li>
+							<li>Team</li>
+							<li>
+								<span>+150</span>
+								<span>&nbsp;FFT</span>
+							</li>
+						</ul>
+					</aside>
+				</article>
 
-					<!--Announce-Card-->
-					<article class="i__announce-card">
-						<div class="header">
-							<h2><span>Your Reward</span> has been distributed.</h2>
-							<p>25.01.16/23:52:01</p>
-						</div>
-						<aside>
-							<p class="truncated">
-								With staking, you can receive daily rewards and team rewards. Once the maximum return of 300% is reached, the staking will
-								automatically unlock, and you can claim your rewards.
-							</p>
-							<ul class="details">
-								<li>Reward received</li>
-								<li>Team</li>
-								<li>
-									<span>+150</span>
-									<span>&nbsp;FFT</span>
-								</li>
-							</ul>
-						</aside>
-					</article>
+				<!--Summary-Card-->
+				<article class="i__summary-card">
+					<p>Information</p>
+					<div>
+						<ul class="grid">
+							<li class="row">
+								<dl class="data">
+									<dt>Package</dt>
+									<dd>F1 Staking</dd>
+								</dl>
+								<dl class="data">
+									<dt>Daily Return</dt>
+									<dd>1%</dd>
+								</dl>
+							</li>
+							<li class="row">
+								<dl class="data">
+									<dt>Package</dt>
+									<dd>F1 Staking</dd>
+								</dl>
+								<dl class="data">
+									<dt>Daily Return</dt>
+									<dd>1%</dd>
+								</dl>
+								<dl class="data">
+									<dt>Daily Return</dt>
+									<dd>1%</dd>
+								</dl>
+							</li>
+							<li class="row">
+								<dl class="data">
+									<dt>Package</dt>
+									<dd>F1 Staking</dd>
+								</dl>
+								<dl class="data">
+									<dt>Daily Return</dt>
+									<dd>1%</dd>
+								</dl>
+								<dl class="data">
+									<dt>Daily Return</dt>
+									<dd>1%</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</article>
 
-					<!--Summary-Card-->
-					<article class="i__summary-card">
-						<p>Information</p>
-						<div>
+				<!--Staking-Item-Card-->
+				<article class="i__staking-item-card bg-yellow">
+					<div>
+						<h2>F1 Staking</h2>
+						<p>Get FFT by staking and get 1% daily reward Click to see more details</p>
+					</div>
+					<aside>
+						<figure>
+							<img alt="burger" src="./../img/invite-burger.png" width="140" />
+						</figure>
+						<div class="staking-details">
 							<ul class="grid">
-								<li class="row">
+								<li>
 									<dl class="data">
-										<dt>Package</dt>
-										<dd>F1 Staking</dd>
-									</dl>
-									<dl class="data">
-										<dt>Daily Return</dt>
-										<dd>1%</dd>
+										<dt>100~1000</dt>
+										<dd>Staking amount</dd>
 									</dl>
 								</li>
-								<li class="row">
+								<li>
 									<dl class="data">
-										<dt>Package</dt>
-										<dd>F1 Staking</dd>
-									</dl>
-									<dl class="data">
-										<dt>Daily Return</dt>
-										<dd>1%</dd>
-									</dl>
-									<dl class="data">
-										<dt>Daily Return</dt>
-										<dd>1%</dd>
+										<dt>
+											<img alt="fwt-icon" src="./../img/currencies/fft-icon.svg" width="16" />
+											<span>FWT</span>
+										</dt>
+										<dd>Reward</dd>
 									</dl>
 								</li>
-								<li class="row">
+								<li>
 									<dl class="data">
-										<dt>Package</dt>
-										<dd>F1 Staking</dd>
+										<dt><span>1%</span>&nbsp;Daily</dt>
+										<dd>Return Info</dd>
 									</dl>
+								</li>
+								<li>
 									<dl class="data">
-										<dt>Daily Return</dt>
-										<dd>1%</dd>
-									</dl>
-									<dl class="data">
-										<dt>Daily Return</dt>
-										<dd>1%</dd>
+										<dt>300%</dt>
+										<dd>Max return</dd>
 									</dl>
 								</li>
 							</ul>
 						</div>
-					</article>
+					</aside>
+				</article>
 
-					<!--Staking-Item-Card-->
-					<article class="i__staking-item-card bg-yellow">
-						<div>
-							<h2>F1 Staking</h2>
-							<p>Get FFT by staking and get 1% daily reward Click to see more details</p>
+				<!--Staked-Item-Card-->
+				<article class="i__staked-item-card bg-yellow">
+					<div>
+						<h2>F1 Staking</h2>
+						<div class="staking-status">
+							<p>Statue</p>
+							<span class="state">Active</span>
 						</div>
-						<aside>
-							<figure>
-								<img alt="burger" src="./../img/invite-burger.png" width="140" />
-							</figure>
-							<div class="staking-details">
-								<ul class="grid">
-									<li>
-										<dl class="data">
-											<dt>100~1000</dt>
-											<dd>Staking amount</dd>
-										</dl>
-									</li>
-									<li>
-										<dl class="data">
-											<dt>
-												<img alt="fwt-icon" src="./../img/currencies/fft-icon.svg" width="16" />
-												<span>FWT</span>
-											</dt>
-											<dd>Reward</dd>
-										</dl>
-									</li>
-									<li>
-										<dl class="data">
-											<dt><span>1%</span>&nbsp;Daily</dt>
-											<dd>Return Info</dd>
-										</dl>
-									</li>
-									<li>
-										<dl class="data">
-											<dt>300%</dt>
-											<dd>Max return</dd>
-										</dl>
-									</li>
-								</ul>
-							</div>
-						</aside>
-					</article>
-
-					<!--Staked-Item-Card-->
-					<article class="i__staked-item-card bg-yellow">
-						<div>
-							<h2>F1 Staking</h2>
-							<div class="staking-status">
-								<p>Statue</p>
-								<span class="state">Active</span>
-							</div>
+					</div>
+					<aside>
+						<figure>
+							<img alt="burger" src="./../img/invite-burger.png" width="140" />
+						</figure>
+						<div class="staking-details">
+							<ul class="grid">
+								<li>
+									<dl class="data">
+										<dt>100~1000</dt>
+										<dd>Staking amount</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="data">
+										<dt>
+											<img alt="fwt-icon" src="./../img/currencies/fft-dark.svg" width="16" />
+											<span>FWT</span>
+										</dt>
+										<dd>Reward</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="data">
+										<dt><span>1%</span>&nbsp;Daily</dt>
+										<dd>Return Info</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="data">
+										<dt>300%</dt>
+										<dd>Max return</dd>
+									</dl>
+								</li>
+							</ul>
 						</div>
-						<aside>
-							<figure>
-								<img alt="burger" src="./../img/invite-burger.png" width="140" />
-							</figure>
-							<div class="staking-details">
-								<ul class="grid">
-									<li>
-										<dl class="data">
-											<dt>100~1000</dt>
-											<dd>Staking amount</dd>
-										</dl>
-									</li>
-									<li>
-										<dl class="data">
-											<dt>
-												<img alt="fwt-icon" src="./../img/currencies/fft-dark.svg" width="16" />
-												<span>FWT</span>
-											</dt>
-											<dd>Reward</dd>
-										</dl>
-									</li>
-									<li>
-										<dl class="data">
-											<dt><span>1%</span>&nbsp;Daily</dt>
-											<dd>Return Info</dd>
-										</dl>
-									</li>
-									<li>
-										<dl class="data">
-											<dt>300%</dt>
-											<dd>Max return</dd>
-										</dl>
-									</li>
-								</ul>
-							</div>
-						</aside>
-					</article>
+					</aside>
+				</article>
 
-					<!--Coin Spinning-->
-					<figure>
-						<div class="coin">
-							<div class="side heads">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									xml:space="preserve"
-									width="100%"
-									height="100%"
-									version="1.1"
-									shape-rendering="geometricPrecision"
-									text-rendering="geometricPrecision"
-									image-rendering="optimizeQuality"
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									viewBox="0 0 4091.27 4091.73"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-								>
-									<g>
-										<path
-											fill="#E32929"
-											fill-rule="nonzero"
-											d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z"
-										></path>
-										<image href="./../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600" height="1600" />
-									</g>
-								</svg>
-							</div>
-							<div class="side tails">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="svg_back"
-									xml:space="preserve"
-									width="100%"
-									height="100%"
-									version="1.1"
-									shape-rendering="geometricPrecision"
-									text-rendering="geometricPrecision"
-									image-rendering="optimizeQuality"
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-									viewBox="0 0 4091.27 4091.73"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-								>
-									<g>
-										<path
-											fill="#E32929"
-											fill-rule="nonzero"
-											d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z"
-										></path>
-										<image href="./../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600" height="1600" />
-									</g>
-								</svg>
-							</div>
+				<!--Coin Spinning-->
+				<figure>
+					<div class="coin">
+						<div class="side heads">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%"
+								version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+								image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+								viewBox="0 0 4091.27 4091.73" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g>
+									<path fill="#E32929" fill-rule="nonzero"
+										d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z">
+									</path>
+									<image href="./../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600"
+										height="1600" />
+								</g>
+							</svg>
 						</div>
-					</figure>
+						<div class="side tails">
+							<svg xmlns="http://www.w3.org/2000/svg" class="svg_back" xml:space="preserve" width="100%"
+								height="100%" version="1.1" shape-rendering="geometricPrecision"
+								text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+								fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 4091.27 4091.73"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g>
+									<path fill="#E32929" fill-rule="nonzero"
+										d="M4030.06 2540.77c-273.24,1096.01 -1383.32,1763.02 -2479.46,1489.71 -1095.68,-273.24 -1762.69,-1383.39 -1489.33,-2479.31 273.12,-1096.13 1383.2,-1763.19 2479,-1489.95 1096.06,273.24 1763.03,1383.51 1489.76,2479.57l0.02 -0.02z">
+									</path>
+									<image href="./../img/coin_spinning/shape.svg" x="1225" y="1225" width="1600"
+										height="1600" />
+								</g>
+							</svg>
+						</div>
+					</div>
+				</figure>
 
-					<!---->
-				</section>
-			</div>
+				<!--Link-Action-->
+				<div class="i__link-action">
+					<a href="#" class="link">
+						<span class="inner-text">
+							Linking
+						</span>
+					</a>
+				</div>
+
+
+				<!---->
+			</section>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>

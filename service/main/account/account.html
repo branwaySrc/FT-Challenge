@@ -1,239 +1,257 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title></title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="./account.css" />
-		<link rel="stylesheet" href="../../common.css" />
-		<link rel="stylesheet" href="../../../global.css" />
-		<link rel="stylesheet" href="./../../../components/tile.css" />
-	</head>
-	<body>
-		<div class="screen-wrapper">
-			<main class="screen-safe-view">
-				<section class="account-tier-container">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./account.css" />
+	<link rel="stylesheet" href="../../common.css" />
+	<link rel="stylesheet" href="../../../global.css" />
+	<link rel="stylesheet" href="./../../../components/tile.css" />
+	<link rel="stylesheet" href="./../../../components/item.css" />
+</head>
+
+<body>
+	<div class="screen-wrapper">
+		<main class="screen-safe-view">
+			<section class="account-tier-container">
+				<div class="account-header-wrapper">
 					<h2 class="padding-vertical text-xl">My Account</h2>
-					<div class="account-tier-content-container border-vertical bg-white">
-						<div class="tier-box padding-vertical">
-							<figure class="bg-gray-900 border-rounded-lg">
-								<img src="../../../img/tier/hamburger.png" />
-							</figure>
-						</div>
-						<aside class="padding-vertical">
-							<dl class="text-md font-bold">
-								<dt>Current Tier</dt>
-								<dd class="text-red">Hamburger</dd>
-							</dl>
-							<dl class="text-gray-200 text-sm">
-								<dt>Account E-mail</dt>
-								<dd>globalcrypto@crypto.com</dd>
-							</dl>
-						</aside>
+					<div class="i__link-action padding-vertical">
+						<a href="./change-password/change-password.html" class="link">
+							<span class="inner-text">
+								Change Password
+							</span>
+						</a>
 					</div>
-				</section>
-
-				<section class="account-referral-container">
-					<h2 class="padding-vertical text-xl">My Referral Info</h2>
-					<div class="border-vertical bg-white">
-						<section class="account-referral-detail">
-							<article class="referral-info bg-gray-900 border-rounded-md">
-								<legend id="referralId" class="text-white text-lg">XADSWR1DD</legend>
-								<button id="addressCopyBtn" class="border-rounded-md bg-yellow">
-									<img src="../../../img/icons/copy-white.svg" />
-								</button>
-							</article>
-							<div class="referral-counter text-md">
-								<span>Referral Count</span>
-								<dl>
-									<dt class="font-bold">01</dt>
-									<dd>invites</dd>
-								</dl>
-							</div>
-						</section>
-					</div>
-				</section>
-
-				<div class="referral-notice">
-					<span class="text-sm text-gray-200">
-						If you want to learn more about referrals, please visit the <br />
-						<span>Referral page</span> for detailed information.
-					</span>
 				</div>
-
-				<div class="create-referral-link padding-vertical">
-					<a href="./../referral/referral-invitation.html" class="bg-yellow border-rounded-lg">
-						<span class="font-bold text-lg text-white">Create Referral Invitation</span>
-					</a>
-				</div>
-
-			
-				<footer class="t__footer">
-					<figure><img src="../../../img/burger-friends.png" /></figure>
-					<div class="t__footer-disclaimer">
-						<img src="../../../img/logo_dark.png" width="48" />
-						<p>
-							FTT does not direct its website and services to any individual in any country in which the use of its website and services are
-							prohibited by local laws or regulations. When accessing this website from a country in which its use may or may not be prohibited, it is
-							the user's responsibility to ensure that any use of the website or services adhere to local laws or regulations. FFT does not affirm
-							that the information on its website is suitable to all jurisdictions.
-						</p>
-					</div>
-				</footer>
-
-				<!--Copied-->
-				<div id="copyAnnounce" class="copy-announce-container padding-vertical">
-					<article class="bg-gray-900 border-rounded-full">
-						<span class="text-white text-sm">Your Referral ID has just been copied to the clipboard!</span>
-					</article>
-				</div>
-			</main>
-
-			<!--Top-Nav-->
-			<nav class="t__top-nav">
-				<ul>
-					<li class="item">
-						<button class="jsMenuBtn">
-							<img draggable="false" src="../../../img/icons/menu.svg" />
-						</button>
-					</li>
-					<li class="item">
-						<legend>
-							<img alt="fwt-logo" draggable="false" src="../../../img/logo.png" width="70" />
-						</legend>
-					</li>
-					<li class="item">
-						<button class="jsLatestHistoryBtn">
-							<img draggable="false" src="../../../img/icons/bell.svg" />
-						</button>
-					</li>
-				</ul>
-			</nav>
-
-			<!--Transaction-Update-->
-			<div class="t__transaction-update-list jsTransactionSlider">
-				<section>
-					<legend>Notification</legend>
-				</section>
-				<div>
-					<span>No Transaction or Reward History</span>
-					<!--아무런 히스토리가 없을때-->
-				</div>
-				<section>
-					<a href="#">
-						<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
-						<span>View History</span>
-					</a>
-				</section>
-			</div>
-
-			<!--Menu-Slide-->
-			<section class="t__menu-list jsMenuOverlay">
-				<div class="t__menu-list-container jsMenuList">
-					<div>
-						<div class="header">
-							<figure>
-								<img src="../../../img/logo.png" width="50" />
-							</figure>
-							<button class="jsCloseBtn">
-								<img src="../../../img/icons/menu-icons/escape.svg" />
-							</button>
-						</div>
-						<section class="separator">
-							<ul class="list">
-								<li>
-									<a href="../home/home.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/home.svg" />
-										<span>Home</span>
-									</a>
-								</li>
-								<li>
-									<a href="../account/account.html" class="menu-active menu-item">
-										<img src="../../../img/icons/menu-icons/user-profile.svg" />
-										<span>My Account</span>
-									</a>
-								</li>
-								<li>
-									<a href="../wallet/wallet.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/wallet.svg" />
-										<span>My Wallet</span>
-									</a>
-								</li>
-								<li>
-									<a href="../referral/referral.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/referrer.svg" />
-										<span>Referral</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<section class="separator">
-							<h2 class="list-header">Funding</h2>
-							<ul class="list">
-								<li>
-									<a href="../../funding/staking/staking.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/staking.svg" />
-										<span>Staking</span>
-									</a>
-								</li>
-								<li>
-									<a href="../../funding/swap/swap.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/swap.svg" />
-										<span>Swap</span>
-									</a>
-								</li>
-								<li>
-									<a href="../../funding/nft/nft.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/nft.svg" />
-										<span>NFT</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<section class="separator">
-							<h2 class="list-header">Support</h2>
-							<ul class="list">
-								<li>
-									<a href="../../support/history/transaction-history.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/transition.svg" />
-										<span>Transaction History</span>
-									</a>
-								</li>
-								<li>
-									<a href="../../support/history/reward-history.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/transition.svg" />
-										<span>Reward History</span>
-									</a>
-								</li>
-								<li>
-									<a href="../../support/announce.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/info.svg" />
-										<span>Announcement</span>
-									</a>
-								</li>
-								<li>
-									<a href="../../support/language.html" class="menu-item">
-										<img src="../../../img/icons/menu-icons/lang.svg" />
-										<span>Language</span>
-									</a>
-								</li>
-							</ul>
-						</section>
-						<aside class="logout">
-							<button>
-								<img src="../../../img/icons/menu-icons/logout.svg" />
-								<span class="text-white font-bold text-md">Log-out</span>
-							</button>
-						</aside>
-					</div>
+				<div class="account-tier-content-container border-vertical bg-white">
+					<div class="tier-box padding-vertical">
+						<figure class="bg-gray-900 border-rounded-lg">
+							<img src="../../../img/tier/hamburger.png" />
+						</figure>
+					</div>	
+					<aside class="padding-vertical">
+						<dl class="text-md font-bold">
+							<dt>Current Tier</dt>
+							<dd class="text-red">Hamburger</dd>
+						</dl>
+						<dl class="text-gray-200 text-sm">
+							<dt>Account E-mail</dt>
+							<dd>globalcrypto@crypto.com</dd>
+						</dl>
+					</aside>
 				</div>
 			</section>
 
-			<!--common-->
+			<section class="account-referral-container">
+				<h2 class="padding-vertical text-xl">My Referral Info</h2>
+				<div class="border-vertical bg-white">
+					<section class="account-referral-detail">
+						<article class="referral-info bg-gray-900 border-rounded-md">
+							<legend id="referralId" class="text-white text-lg">XADSWR1DD</legend>
+							<button id="addressCopyBtn" class="border-rounded-md bg-yellow">
+								<img src="../../../img/icons/copy-white.svg" />
+							</button>
+						</article>
+						<div class="referral-counter text-md">
+							<span>Referral Count</span>
+							<dl>
+								<dt class="font-bold">01</dt>
+								<dd>invites</dd>
+							</dl>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<div class="referral-notice">
+				<span class="text-sm text-gray-200">
+					If you want to learn more about referrals, please visit the <br />
+					<span>Referral page</span> for detailed information.
+				</span>
+			</div>
+
+			<div class="create-referral-link padding-vertical">
+				<a href="./../referral/referral-invitation.html" class="bg-yellow border-rounded-lg">
+					<span class="font-bold text-lg text-white">Create Referral Invitation</span>
+				</a>
+			</div>
+
+
+
+
+			<footer class="t__footer">
+				<figure><img src="../../../img/burger-friends.png" /></figure>
+				<div class="t__footer-disclaimer">
+					<img src="../../../img/logo_dark.png" width="48" />
+					<p>
+						FTT does not direct its website and services to any individual in any country in which the use
+						of its website and services are
+						prohibited by local laws or regulations. When accessing this website from a country in which its
+						use may or may not be prohibited, it is
+						the user's responsibility to ensure that any use of the website or services adhere to local laws
+						or regulations. FFT does not affirm
+						that the information on its website is suitable to all jurisdictions.
+					</p>
+				</div>
+			</footer>
+
+			<!--Copied-->
+			<div id="copyAnnounce" class="copy-announce-container padding-vertical">
+				<article class="bg-gray-900 border-rounded-full">
+					<span class="text-white text-sm">Your Referral ID has just been copied to the clipboard!</span>
+				</article>
+			</div>
+		</main>
+
+		<!--Top-Nav-->
+		<nav class="t__top-nav">
+			<ul>
+				<li class="item">
+					<button class="jsMenuBtn">
+						<img draggable="false" src="../../../img/icons/menu.svg" />
+					</button>
+				</li>
+				<li class="item">
+					<legend>
+						<img alt="fwt-logo" draggable="false" src="../../../img/logo.png" width="70" />
+					</legend>
+				</li>
+				<li class="item">
+					<button class="jsLatestHistoryBtn">
+						<img draggable="false" src="../../../img/icons/bell.svg" />
+					</button>
+				</li>
+			</ul>
+		</nav>
+
+		<!--Transaction-Update-->
+		<div class="t__transaction-update-list jsTransactionSlider">
+			<section>
+				<legend>Notification</legend>
+			</section>
+			<div>
+				<span>No Transaction or Reward History</span>
+				<!--아무런 히스토리가 없을때-->
+			</div>
+			<section>
+				<a href="#">
+					<img draggable="false" src="../../../img/icons/notice.svg" width="16" />
+					<span>View History</span>
+				</a>
+			</section>
 		</div>
-		<script defer src="./../../../script.js"></script>
-	</body>
+
+		<!--Menu-Slide-->
+		<section class="t__menu-list jsMenuOverlay">
+			<div class="t__menu-list-container jsMenuList">
+				<div>
+					<div class="header">
+						<figure>
+							<img src="../../../img/logo.png" width="50" />
+						</figure>
+						<button class="jsCloseBtn">
+							<img src="../../../img/icons/menu-icons/escape.svg" />
+						</button>
+					</div>
+					<section class="separator">
+						<ul class="list">
+							<li>
+								<a href="../home/home.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/home.svg" />
+									<span>Home</span>
+								</a>
+							</li>
+							<li>
+								<a href="../account/account.html" class="menu-active menu-item">
+									<img src="../../../img/icons/menu-icons/user-profile.svg" />
+									<span>My Account</span>
+								</a>
+							</li>
+							<li>
+								<a href="../wallet/wallet.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/wallet.svg" />
+									<span>My Wallet</span>
+								</a>
+							</li>
+							<li>
+								<a href="../referral/referral.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/referrer.svg" />
+									<span>Referral</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="separator">
+						<h2 class="list-header">Funding</h2>
+						<ul class="list">
+							<li>
+								<a href="../../funding/staking/staking.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/staking.svg" />
+									<span>Staking</span>
+								</a>
+							</li>
+							<li>
+								<a href="../../funding/swap/swap.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/swap.svg" />
+									<span>Swap</span>
+								</a>
+							</li>
+							<li>
+								<a href="../../funding/nft/nft.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/nft.svg" />
+									<span>NFT</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="separator">
+						<h2 class="list-header">Support</h2>
+						<ul class="list">
+							<li>
+								<a href="../../support/history/transaction-history.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/transition.svg" />
+									<span>Transaction History</span>
+								</a>
+							</li>
+							<li>
+								<a href="../../support/history/reward-history.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/transition.svg" />
+									<span>Reward History</span>
+								</a>
+							</li>
+							<li>
+								<a href="../../support/announce.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/info.svg" />
+									<span>Announcement</span>
+								</a>
+							</li>
+							<li>
+								<a href="../../support/language.html" class="menu-item">
+									<img src="../../../img/icons/menu-icons/lang.svg" />
+									<span>Language</span>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<aside class="logout">
+						<button>
+							<img src="../../../img/icons/menu-icons/logout.svg" />
+							<span class="text-white font-bold text-md">Log-out</span>
+						</button>
+					</aside>
+				</div>
+			</div>
+		</section>
+
+		<!--common-->
+	</div>
+	<script defer src="./../../../script.js"></script>
+</body>
+
 </html>
