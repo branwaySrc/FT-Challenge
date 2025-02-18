@@ -9,3 +9,7 @@
 .announce-list > li > a :hover {
 	background-color: #f9f9f9;
 }
+
+.announce-detail-inner {
+	line-height: 1.5;
+}
