@@ -5,18 +5,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("../img/main-bg.jpg");
-}
-
-.bg-animate {
-	background-position: 0 0;
-	animation: moveBackground 30s linear infinite;
+	background-image: url("../img/entry_bg.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .signature-font {
-	font-family: knewave;
+	font-family: "Londrina Solid", serif;
 	color: #fff;
-	font-weight: 400;
+	font-weight: 900;
+	font-style: normal;
 }
 
 .signature-title {
@@ -74,7 +73,11 @@
 .lang-container .lang-action > li > p {
 	margin-bottom: 6px;
 	font-size: 16px;
-	font-family: knewave;
+	font-family: "Londrina Solid", serif;
+	color: #fff;
+	font-weight: 900;
+	font-style: normal;
+	-webkit-text-stroke: 1px #333;
 }
 
 .overlay-wrapper {

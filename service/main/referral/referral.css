@@ -109,10 +109,11 @@
 	justify-content: end;
 }
 
-.invitation-card-detail .invite-burger {
+.invitation-card-detail .invite-character {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	justify-self: end;
 }
 
 .invitation-card-detail .invite-qr {
