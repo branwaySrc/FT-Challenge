@@ -11,13 +11,22 @@
 		<link rel="stylesheet" href="../../common.css" />
 		<link rel="stylesheet" href="../../../global.css" />
 		<link rel="stylesheet" href="../../../components/tile.css" />
+		<link rel="stylesheet" href="../../../components/item.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<main class="screen-safe-view">
 				<!--Swap Calculator-->
-				<div class="padding-vertical calculator-header">
-					<legend class="heading-xl">Swap</legend>
+				<div class="i__page-header__aside margin-vertical">
+					<div class="swap-header-container">
+						<h2>Swap</h2>
+						<p class="text-md text-gray-200">Current Option, USDT to FWT</p>
+					</div>
+					<aside>
+						<a href="./swap-usdt.html" class="swap-option-btn border-rounded-md bg-yellow">
+							<span class="text-white font-bold text-md">Swap USDT to FWT</span>
+						</a>
+					</aside>
 				</div>
 				<section class="calculator-container border-vertical bg-white">
 					<div class="calculator-box">
@@ -29,7 +38,7 @@
 								</div>
 								<aside class="currency-balance">
 									<div>
-										<img src="../../../img/currencies/usdt-icon.svg" alt="USDT icon" />
+										<img src="../../../img/currencies/usdt-icon.svg" alt="USDT icon" width="36" />
 									</div>
 									<div>
 										<h2 class="text-white text-lg">USDT</h2>
@@ -58,7 +67,7 @@
 						</div>
 						<div class="network-fee padding-vertical">
 							<span class="text-gray-200">Network fee</span>
-							<span><img src="./../../../img/currencies/fft-dark.svg" width="32" /></span>
+							<span><img src="./../../../img/currencies/usdt-icon.svg" width="32" /></span>
 							<span class="font-bold">1%</span>
 						</div>
 					</div>

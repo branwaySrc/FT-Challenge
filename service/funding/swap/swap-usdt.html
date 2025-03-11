@@ -7,135 +7,75 @@
 		<title></title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./swap.css" />
 		<link rel="stylesheet" href="../../common.css" />
-		<link rel="stylesheet" href="../../../components/tile.css" />
 		<link rel="stylesheet" href="../../../global.css" />
-		<link rel="stylesheet" href="../wallet/wallet.css" />
+		<link rel="stylesheet" href="../../../components/tile.css" />
 		<link rel="stylesheet" href="../../../components/item.css" />
 	</head>
 	<body>
 		<div class="screen-wrapper">
 			<main class="screen-safe-view">
-				<!--My Asset-->
-				<section class="asset-container">
-					<div class="asset-header padding-vertical">
-						<legend class="heading-xl">
-							My Asset
-							<button class="jsRefreshAction">
-								<img draggable="false" src="../../../img/icons/refresh-black.svg" />
-							</button>
-						</legend>
-						<p class="text-gray-200 text-md">
-							Refresh to update assets. Delays may occur due to transactions but will apply immediately once completed.
-						</p>
+				<!--Swap Calculator-->
+				<div class="i__page-header__aside margin-vertical">
+					<div class="swap-header-container">
+						<h2>Swap</h2>
+						<p class="text-md text-gray-200">Current Option, FWT to USDT</p>
 					</div>
-					<div class="asset-content-container bg-white border-vertical padding-vertical">
-						<section class="asset-table">
-							<div class="asset-box">
-								<div class="coin-statue">
-									<dl>
-										<div class="coin-price">
-											<figure>
-												<img draggable="false" src="../../../img/currencies/fft-icon.svg" width="36" />
-											</figure>
-											<div class="coin-label">
-												<h2 class="text-lg bold">FWT</h2>
-												<div class="text-md text-gray-200">
-													<span>≈ $</span>
-													<span>0.1</span>
-												</div>
-											</div>
-										</div>
-									</dl>
-									<aside class="coin-valid">
-										<dl>
-											<dt class="font-bold text-md">Available</dt>
-											<dd class="font-bold text-md">10,000.00</dd>
-											<dl>
-												<dd class="font-bold text-md text-gray-200">≈ $</dd>
-												<dd class="text-gray-200">1,000.00</dd>
-											</dl>
-										</dl>
-									</aside>
+					<aside>
+						<a href="./swap.html" class="swap-option-btn border-rounded-md bg-yellow">
+							<span class="text-white font-bold text-md">Swap FWT to USDT</span>
+						</a>
+					</aside>
+				</div>
+				<section class="calculator-container border-vertical bg-white">
+					<div class="calculator-box">
+						<div class="calculator-inner bg-gray-900 border-rounded-lg">
+							<section>
+								<div class="base-token text-white">
+									<span class="text-gray-100">Base Token</span>
+									<input id="usdtValue" type="number" placeholder="0" min="0" class="font-bold text-2xl" maxlength="8" inputmode="numeric" />
 								</div>
-								<div class="coin-banking">
-									<a href="./banking-fft/deposit.html" class="banking-action bg-yellow border-rounded-xs">
-										<span class="text-white">Deposit</span>
-									</a>
-									<a href="./banking-fft/withdrawal.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Withdrawal</span>
-									</a>
-									<a href="./banking-fft/transfer.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Transfer</span>
-									</a>
+								<aside class="currency-balance">
+									<div>
+										<img src="../../../img/currencies/fft-icon.svg" alt="FWT icon" width="36" />
+									</div>
+									<div>
+										<h2 class="text-white text-lg">FWT</h2>
+										<span class="text-gray-200">Current Balance:</span>
+										<span class="text-gray-200">0.00</span>
+									</div>
+								</aside>
+							</section>
+
+							<section>
+								<div class="base-token text-white">
+									<span class="text-gray-100">You will Receive</span>
+									<span id="equivalentValue" class="text-2xl">0</span>
 								</div>
-							</div>
-							<div class="asset-box">
-								<div class="coin-statue">
-									<dl>
-										<div class="coin-price">
-											<figure>
-												<img draggable="false" src="../../../img/currencies/usdt-icon.svg" />
-											</figure>
-											<div class="coin-label">
-												<h2 class="text-lg font-bold">USDT</h2>
-												<div class="text-md text-gray-200">
-													<span>≈ $</span>
-													<span>0.99</span>
-												</div>
-											</div>
-										</div>
-									</dl>
-									<aside class="coin-valid">
-										<dl>
-											<dt class="font-bold text-md">Available</dt>
-											<dd class="font-bold text-md">1,000.00</dd>
-											<dl>
-												<dd class="font-bold text-md text-gray-200">≈ $</dd>
-												<dd class="text-gray-200">1,000.00</dd>
-											</dl>
-										</dl>
-									</aside>
-								</div>
-								<div class="coin-banking">
-									<a href="./banking-usdt/deposit.html" class="banking-action bg-yellow border-rounded-xs">
-										<span class="text-white">Deposit</span>
-									</a>
-									<a href="./banking-usdt/withdrawal.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Withdrawal</span>
-									</a>
-									<a href="./banking-usdt/transfer.html" class="banking-action bg-gray-900 border-rounded-xs">
-										<span class="text-white">Transfer</span>
-									</a>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div>
-						<div class="i__page-header margin-vertical">
-							<h2>My NFT</h2>
-							<p>Refresh to update assets. Delays may occur due to transactions but will apply immediately once completed.</p>
+								<aside class="currency-balance">
+									<div>
+										<img src="../../../img/currencies/usdt-icon.svg" width="36" alt="USDT icon" />
+									</div>
+									<div>
+										<h2 class="text-white text-lg">USDT</h2>
+										<span class="text-gray-200">Current Balance:</span>
+										<span class="text-gray-200">10,000,000.00</span>
+									</div>
+								</aside>
+							</section>
 						</div>
-						<section class="nft-container border-vertical bg-white">
-							<ol class="nft-list">
-								<li>
-									<figure class="border-rounded-lg">
-										<img src="./../../../img/nft/nft-noble.png" width="150" />
-									</figure>
-									<dl class="product-info">
-										<dt>FWT Noble</dt>
-									</dl>
-								</li>
-								<li>
-									<figure class="border-rounded-lg">
-										<img src="./../../../img/nft/nft-knight.png" width="150" />
-									</figure>
-									<dl class="product-info">
-										<dt>FWT Knight</dt>
-									</dl>
-								</li>
-							</ol>
-						</section>
+						<div class="network-fee padding-vertical">
+							<span class="text-gray-200">Network fee</span>
+							<span><img src="./../../../img/currencies/fft-dark.svg" width="32" /></span>
+							<span class="font-bold">1%</span>
+						</div>
+					</div>
+					<div class="calculator-btn padding-vertical">
+						<a href="./swap-confirm.html" class="bg-yellow border-rounded-lg font-bold text-lg text-white">Request Swap</a>
+						<span class="text-gray-200">
+							The current swap rate may vary due to real-time fluctuations and differences at the exact time of swap confirmation.
+						</span>
 					</div>
 				</section>
 
@@ -144,7 +84,7 @@
 					<div class="t__footer-disclaimer">
 						<img src="../../../img/logo_dark.png" width="140" />
 						<p>
-							FWT does not direct its website and services to any individual in any country in which the use of its website and services are
+							FTT does not direct its website and services to any individual in any country in which the use of its website and services are
 							prohibited by local laws or regulations. When accessing this website from a country in which its use may or may not be prohibited, it is
 							the user's responsibility to ensure that any use of the website or services adhere to local laws or regulations. FFT does not affirm
 							that the information on its website is suitable to all jurisdictions.
@@ -152,7 +92,7 @@
 					</div>
 				</footer>
 				<!--Copied-->
-				<div id="copyAnnounce" class="copy-announce-container padding-vertical">
+				<div id="swapAnnounce" class="pop-announce-container padding-vertical">
 					<article class="bg-gray-900 border-rounded-full">
 						<span class="text-white text-sm"
 							>The wallet address has just been <br />
@@ -188,8 +128,8 @@
 					<legend>Notification</legend>
 				</section>
 				<div>
-					<!--아무런 히스토리가 없을때-->
 					<span>No Transaction or Reward History</span>
+					<!--아무런 히스토리가 없을때-->
 				</div>
 				<section>
 					<a href="#">
@@ -214,25 +154,25 @@
 						<section class="separator">
 							<ul class="list">
 								<li>
-									<a href="../home/home.html" class="menu-item">
+									<a href="../../main/home/home.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/home.svg" />
 										<span>Home</span>
 									</a>
 								</li>
 								<li>
-									<a href="../account/account.html" class="menu-item">
+									<a href="../../main/account/account.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/user-profile.svg" />
 										<span>My Account</span>
 									</a>
 								</li>
 								<li>
-									<a href="../wallet/wallet.html" class="menu-active menu-item">
+									<a href="../../main/wallet/wallet.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/wallet.svg" />
 										<span>My Wallet</span>
 									</a>
 								</li>
 								<li>
-									<a href="../referral/referral.html" class="menu-item">
+									<a href="../../main/referral/referral.html" class="menu-item">
 										<img src="../../../img/icons/menu-icons/referrer.svg" />
 										<span>Referral</span>
 									</a>
@@ -249,7 +189,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="../../funding/swap/swap.html" class="menu-item">
+									<a href="../../funding/swap/swap.html" class="menu-active menu-item">
 										<img src="../../../img/icons/menu-icons/swap.svg" />
 										<span>Swap</span>
 									</a>
@@ -300,7 +240,6 @@
 					</div>
 				</div>
 			</section>
-
 			<!--common-->
 		</div>
 		<script defer src="./../../../script.js"></script>

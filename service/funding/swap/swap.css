@@ -1,3 +1,16 @@
+.swap-header-container {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.swap-option-btn {
+	display: flex;
+	align-items: center;
+	padding: 18px;
+	text-decoration: none;
+}
+
 .calculator-header {
 	margin: 16px 0px;
 }

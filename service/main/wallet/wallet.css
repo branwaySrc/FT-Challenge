@@ -297,3 +297,33 @@
 	width: 100%;
 	justify-content: center;
 }
+
+.nft-list {
+	padding: 16px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	justify-items: center;
+}
+
+.nft-list > li {
+	max-width: 150px;
+}
+
+.nft-list > li > figure {
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+}
+
+.nft-list > li > .product-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 6px;
+}
+
+.product-info {
+	padding: 0px 4px;
+}
